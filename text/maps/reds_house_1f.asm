@@ -1,6 +1,11 @@
 _MomWakeUpText::
 	text "MOM: Right."
+IF DEF(_RED)	
 	line "All boys leave"
+ENDC
+IF DEF(_BLUE)	
+	line "All kids leave"
+ENDC
 	cont "home some day."
 	cont "It said so on TV."
 
@@ -25,7 +30,12 @@ _MomHealText2::
 
 _StandByMeText::
 	text "There's a movie"
+IF DEF(_RED)	
 	line "on TV. Four boys"
+ENDC
+IF DEF(_BLUE)	
+	line "on TV. Four kids"
+ENDC
 	cont "are walking on"
 	cont "railroad tracks."
 
