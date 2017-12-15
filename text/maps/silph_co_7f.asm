@@ -178,7 +178,12 @@ _SilphCo7Text_51ecd::
 
 	para "You're not good"
 	line "enough to play"
+IF DEF (_RED)
+	cont "with us big kids!"
+ENDC
+IF DEF(_BLUE)	
 	cont "with us big boys!"
+ENDC
 	prompt
 
 _SilphCo7Text_51ed2::

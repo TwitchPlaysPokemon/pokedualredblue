@@ -228,7 +228,13 @@ RedSprite:
 	IF DEF(_BLUE)
 		INCBIN "gfx/sprites/green.2bpp"
 	ENDC
-BlueSprite:           INCBIN "gfx/sprites/blue.2bpp"
+BlueSprite:           
+	IF DEF(_RED)
+		INCBIN "gfx/sprites/green.2bpp"
+	ENDC
+	IF DEF(_BLUE)
+		INCBIN "gfx/sprites/red.2bpp"
+	ENDC
 OakSprite:            INCBIN "gfx/sprites/oak.2bpp"
 BugCatcherSprite:     INCBIN "gfx/sprites/bug_catcher.2bpp"
 SlowbroSprite:        INCBIN "gfx/sprites/slowbro.2bpp"
@@ -1297,7 +1303,13 @@ JugglerPic::       INCBIN "pic/trainer/juggler.pic"
 TamerPic::         INCBIN "pic/trainer/tamer.pic"
 BirdKeeperPic::    INCBIN "pic/trainer/birdkeeper.pic"
 BlackbeltPic::     INCBIN "pic/trainer/blackbelt.pic"
-Rival1Pic::        INCBIN "pic/trainer/rival1.pic"
+Rival1Pic::        
+	IF DEF(_BLUE)
+		INCBIN "pic/trainer/red.pic"
+	ENDC
+	IF DEF(_RED)
+		INCBIN "pic/trainer/green.pic"
+	ENDC
 ProfOakPic::       INCBIN "pic/trainer/prof.oak.pic"
 ChiefPic::
 ScientistPic::     INCBIN "pic/trainer/scientist.pic"
@@ -1314,8 +1326,20 @@ KogaPic::          INCBIN "pic/trainer/koga.pic"
 BlainePic::        INCBIN "pic/trainer/blaine.pic"
 SabrinaPic::       INCBIN "pic/trainer/sabrina.pic"
 GentlemanPic::     INCBIN "pic/trainer/gentleman.pic"
-Rival2Pic::        INCBIN "pic/trainer/rival2.pic"
-Rival3Pic::        INCBIN "pic/trainer/rival3.pic"
+Rival2Pic::        
+	IF DEF(_BLUE)
+		INCBIN "pic/trainer/red.pic"
+	ENDC
+	IF DEF(_RED)
+		INCBIN "pic/trainer/green.pic"
+	ENDC
+Rival3Pic::        
+	IF DEF(_BLUE)
+		INCBIN "pic/trainer/red.pic"
+	ENDC
+	IF DEF(_RED)
+		INCBIN "pic/trainer/green.pic"
+	ENDC
 LoreleiPic::       INCBIN "pic/trainer/lorelei.pic"
 ChannelerPic::     INCBIN "pic/trainer/channeler.pic"
 AgathaPic::        INCBIN "pic/trainer/agatha.pic"

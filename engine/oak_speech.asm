@@ -82,15 +82,15 @@ OakSpeech:
 	ld hl,IntroducePlayerText
 	call PrintText
 	call ChoosePlayerName
-	call GBFadeOutToWhite
-	call ClearScreen
-	ld de,Rival1Pic
-	lb bc, Bank(Rival1Pic), $00
-	call IntroDisplayPicCenteredOrUpperRight
-	call FadeInIntroPic
-	ld hl,IntroduceRivalText
-	call PrintText
-	call ChooseRivalName
+	;call GBFadeOutToWhite
+	;call ClearScreen
+	;ld de,Rival1Pic
+	;lb bc, Bank(Rival1Pic), $00
+	;call IntroDisplayPicCenteredOrUpperRight
+	;call FadeInIntroPic
+	;ld hl,IntroduceRivalText
+	;call PrintText
+	;call ChooseRivalName
 .skipChoosingNames
 	call GBFadeOutToWhite
 	call ClearScreen

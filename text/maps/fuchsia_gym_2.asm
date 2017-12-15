@@ -114,7 +114,12 @@ _FuchsiaGymBattleText4::
 
 _FuchsiaGymEndBattleText4::
 	text "Whoa!"
+IF DEF(_RED)
 	line "He's got it!"
+ENDC
+IF DEF(_BLUE)
+	line "She's got it!"
+ENDC
 	prompt
 
 _FuchsiaGymAfterBattleText4::

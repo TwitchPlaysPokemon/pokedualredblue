@@ -52,6 +52,7 @@ _LanceAfterBattleText::
 
 	para "You have to face"
 	line "another trainer!"
+IF DEF(_BLUE)
 	cont "His name is..."
 
 	para "<RIVAL>!"
@@ -61,3 +62,15 @@ _LanceAfterBattleText::
 	para "He is the real"
 	line "#MON LEAGUE"
 	cont "champion!@@"
+ENDC
+IF DEF(_RED)
+	cont "Her name is..."
+
+	para "<RIVAL>! She"
+	line "beat the ELITE"
+	cont "FOUR before you!"
+
+	para "She is the real"
+	line "#MON LEAGUE"
+	cont "champion!@@"
+ENDC
