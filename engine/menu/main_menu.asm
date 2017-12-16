@@ -34,7 +34,7 @@ MainMenu:
 	jr z,.noSaveFile
 ; there's a save file
 	coord hl, 0, 0
-	ld b,6
+	ld b,4
 	ld c,13
 	call TextBoxBorder
 	coord hl, 2, 2
@@ -63,7 +63,7 @@ MainMenu:
 	ld [wTopMenuItemY],a
 	ld a,A_BUTTON | B_BUTTON | START
 	ld [wMenuWatchedKeys],a
-	ld a,[wSaveFileStatus]
+	ld a,1
 	ld [wMaxMenuItem],a
 	call HandleMenuInput
 	bit 1,a ; pressed B?
@@ -71,23 +71,17 @@ MainMenu:
 	ld c,20
 	call DelayFrames
 	ld a,[wCurrentMenuItem]
-	ld b,a
-	ld a,[wSaveFileStatus]
-	cp a,2
-	jp z,.skipInc
-; If there's no save file, increment the current menu item so that the numbers
-; are the same whether or not there's a save file.
-	inc b
-.skipInc
-	ld a,b
-	and a
-	jr z,.choseContinue
 	cp a,1
-	jp z,StartNewGame
+	jp nz,.skipOption
 	call DisplayOptionMenu
 	ld a,1
 	ld [wOptionsInitialized],a
 	jp .mainMenuLoop
+.skipOption
+	ld a,[wSaveFileStatus]
+	cp a,2
+	jr z,.choseContinue
+	jp StartNewGame
 .choseContinue
 	call DisplayContinueGameInfo
 	ld hl,wCurrentMapScriptFlags
@@ -330,6 +324,7 @@ SpecialEnterMap:
 
 ContinueText:
 	db "CONTINUE", $4e
+	db "OPTION@"
 
 NewGameText:
 	db   "NEW GAME"
