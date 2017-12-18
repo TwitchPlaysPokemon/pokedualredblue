@@ -1004,6 +1004,8 @@ ReplaceFaintedEnemyMon:
 
 TrainerBattleVictory:
 	call EndLowHealthAlarm
+	xor a
+	ld [wExternalTrainer], a
 	ld b, MUSIC_DEFEATED_GYM_LEADER
 	ld a, [wGymLeaderNo]
 	and a
@@ -1220,6 +1222,8 @@ ChooseNextMon:
 ; called when player is out of usable mons.
 ; prints appropriate lose message, sets carry flag if player blacked out (special case for initial rival fight)
 HandlePlayerBlackOut:
+	xor a
+	ld [wExternalTrainer], a
 	ld a, [wLinkState]
 	cp LINK_STATE_BATTLING
 	jr z, .notSony1Battle
@@ -6200,6 +6204,9 @@ GetCurrentMove:
 LoadEnemyMonData:
 	ld a, [wLinkState]
 	cp LINK_STATE_BATTLING
+	jp z, LoadEnemyMonFromParty
+	ld a, [wExternalTrainer]
+	cp $1
 	jp z, LoadEnemyMonFromParty
 	ld a, [wEnemyMonSpecies2]
 	ld [wEnemyMonSpecies], a

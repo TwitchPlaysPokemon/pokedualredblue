@@ -2674,7 +2674,8 @@ wNumHoFTeams:: ; d5a2
 ; number of HOF teams
 	ds 1
 
-wUnusedD5A3:: ; d5a3
+wExternalTrainer:: ; d5a3
+; if 1, treat enemy party like a link battle party
 	ds 1
 
 wPlayerCoins:: ; d5a4
