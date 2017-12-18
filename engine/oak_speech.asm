@@ -92,12 +92,12 @@ OakSpeech:
 	;call PrintText
 	;call ChooseRivalName
 .skipChoosingNames
-	call GBFadeOutToWhite
-	call ClearScreen
-	ld de,RedPicFront
-	lb bc, Bank(RedPicFront), $00
-	call IntroDisplayPicCenteredOrUpperRight
-	call GBFadeInFromWhite
+	;call GBFadeOutToWhite
+	;call ClearScreen
+	;ld de,RedPicFront
+	;lb bc, Bank(RedPicFront), $00
+	;call IntroDisplayPicCenteredOrUpperRight
+	;call GBFadeInFromWhite
 	ld a,[wd72d]
 	and a
 	jr nz,.next
