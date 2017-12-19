@@ -30,7 +30,11 @@ AskName:
 	push hl
 	ld a, NAME_MON_SCREEN
 	ld [wNamingScreenType], a
+.forcedNamingLoop
 	call DisplayNamingScreen
+	ld a, [wcf4b]
+	cp "@"
+	jr z, .forcedNamingLoop
 	ld a, [wIsInBattle]
 	and a
 	jr nz, .inBattle
