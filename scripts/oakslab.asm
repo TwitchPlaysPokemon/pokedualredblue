@@ -330,7 +330,7 @@ OaksLabScript9:
 	call SetSpriteFacingDirectionAndDelay
 	ld a, $e
 	ld [hSpriteIndexOrTextID], a
-	call DisplayTextID
+	;call DisplayTextID
 	SetEvent EVENT_GOT_STARTER
 	xor a
 	ld [wJoyIgnore], a
