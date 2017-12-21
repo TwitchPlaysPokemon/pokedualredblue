@@ -1802,6 +1802,12 @@ LoadEnemyMonFromParty:
 	inc de
 	dec b
 	jr nz, .copyBaseStatsLoop
+	ld hl, wMonHCatchRate
+	ld a, [hli]
+	ld [de], a
+	inc de
+	ld a, [hl]     ; base exp
+	ld [de], a
 	ld a, $7 ; default stat modifier
 	ld b, NUM_STAT_MODS
 	ld hl, wEnemyMonStatMods
@@ -1811,6 +1817,15 @@ LoadEnemyMonFromParty:
 	jr nz, .statModLoop
 	ld a, [wWhichPokemon]
 	ld [wEnemyMonPartyPos], a
+	ld a, [wEnemyMonSpecies]
+	ld [wd11e], a
+	predef IndexToPokedex
+	ld a, [wd11e]
+	dec a
+	ld c, a
+	ld b, FLAG_SET
+	ld hl, wPokedexSeen
+	predef FlagActionPredef ; mark this mon as seen in the pokedex
 	ret
 
 SendOutMon:
