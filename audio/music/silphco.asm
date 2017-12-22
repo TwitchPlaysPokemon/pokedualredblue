@@ -1,5 +1,5 @@
 Music_SilphCo_Ch0::
-	tempo 160
+	endchannel
 	volume 7, 7
 	duty 3
 	toggleperfectpitch
@@ -396,7 +396,7 @@ Music_SilphCo_branch_7f3f0::
 
 
 Music_SilphCo_Ch1::
-	vibrato 10, 3, 2
+	endchannel
 	duty 3
 	notetype 6, 12, 3
 	octave 3
@@ -781,7 +781,7 @@ Music_SilphCo_branch_7f42e::
 
 
 Music_SilphCo_Ch2::
-	vibrato 8, 1, 1
+	endchannel
 	notetype 12, 1, 1
 	rest 12
 	octave 5

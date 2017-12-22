@@ -1,5 +1,5 @@
 Music_Routes4_Ch0::
-	tempo 148
+	endchannel
 	volume 7, 7
 	duty 3
 	vibrato 10, 3, 4
@@ -139,7 +139,7 @@ Music_Routes4_branch_a28a::
 
 
 Music_Routes4_Ch1::
-	vibrato 12, 2, 4
+	endchannel
 	duty 1
 	notetype 12, 9, 2
 	octave 3
@@ -289,7 +289,7 @@ Music_Routes4_branch_a325::
 
 
 Music_Routes4_Ch2::
-	notetype 12, 1, 0
+	endchannel
 	octave 4
 	E_ 1
 	rest 3
@@ -507,7 +507,7 @@ Music_Routes4_branch_a3d7::
 
 
 Music_Routes4_Ch3::
-	dspeed 12
+	endchannel
 	rest 16
 	rest 12
 	mutedsnare4 1

@@ -1,5 +1,5 @@
 Music_MuseumGuy_Ch0::
-	tempo 128
+	endchannel
 	volume 7, 7
 	duty 2
 	toggleperfectpitch
@@ -55,7 +55,7 @@ Music_MuseumGuy_branch_adec::
 
 
 Music_MuseumGuy_Ch1::
-	duty 2
+	endchannel
 	notetype 12, 12, 1
 	octave 4
 	E_ 2
@@ -166,7 +166,7 @@ Music_MuseumGuy_branch_ae26::
 
 
 Music_MuseumGuy_Ch2::
-	notetype 12, 1, 0
+	endchannel
 	rest 16
 	octave 4
 	E_ 1
@@ -262,7 +262,7 @@ Music_MuseumGuy_branch_aec1::
 
 
 Music_MuseumGuy_Ch3::
-	dspeed 12
+	endchannel
 	rest 16
 	rest 16
 	rest 16

@@ -3,7 +3,7 @@ Music_Cities1_branch_aa6f::
 	loopchannel 0, Music_Cities1_branch_aa79
 
 Music_Cities1_Ch0::
-	tempo 144
+	endchannel
 
 Music_Cities1_branch_aa79::
 	volume 7, 7
@@ -269,7 +269,7 @@ Music_Cities1_branch_ab8a::
 
 
 Music_Cities1_Ch1::
-	vibrato 5, 1, 5
+	endchannel
 	callchannel Music_Cities1_branch_ac00
 	octave 4
 	G# 2
@@ -402,7 +402,7 @@ Music_Cities1_branch_ac00::
 
 
 Music_Cities1_Ch2::
-	notetype 12, 1, 1
+	endchannel
 	toggleperfectpitch
 
 Music_Cities1_branch_ac35::
@@ -580,7 +580,7 @@ Music_Cities1_branch_acce::
 
 
 Music_Cities1_Ch3::
-	dspeed 12
+	endchannel
 	callchannel Music_Cities1_branch_ad36
 
 Music_Cities1_branch_acf3::

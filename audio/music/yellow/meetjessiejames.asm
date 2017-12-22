@@ -1,5 +1,5 @@
 Music_MeetJessieJames_Ch1::
-	tempo 144
+	endchannel
 	volume 7, 7
 	duty 3
 	vibrato 8, 1, 4
@@ -78,7 +78,7 @@ Music_MeetJessieJames_branch_83187::
 
 
 Music_MeetJessieJames_Ch2::
-	duty 3
+	endchannel
 	vibrato 6, 1, 5
 	notetype 12, 12, 2
 	octave 4
@@ -165,7 +165,7 @@ Music_MeetJessieJames_branch_831df::
 
 
 Music_MeetJessieJames_Ch3::
-	notetype 12, 1, 0
+	endchannel
 	rest 16
 	rest 8
 	octave 4

@@ -1,5 +1,5 @@
 Music_UnusedSong_Ch0::
-	tempo 144
+	endchannel
 	volume 7, 7
 	vibrato 5, 1, 6
 
@@ -183,7 +183,7 @@ Music_UnusedSong_branch_a91b::
 
 
 Music_UnusedSong_Ch1::
-	tempo 144
+	endchannel
 	volume 7, 7
 	toggleperfectpitch
 	vibrato 6, 1, 5

@@ -1,5 +1,5 @@
 Music_OaksLab_Ch0::
-	tempo 140
+	endchannel
 	volume 7, 7
 	duty 3
 	vibrato 16, 1, 2
@@ -70,7 +70,7 @@ Music_OaksLab_branch_7eed0::
 
 
 Music_OaksLab_Ch1::
-	duty 3
+	endchannel
 	vibrato 10, 2, 5
 	notetype 12, 12, 4
 	octave 3
@@ -145,7 +145,7 @@ Music_OaksLab_branch_7ef16::
 
 
 Music_OaksLab_Ch2::
-	notetype 12, 1, 1
+	endchannel
 	rest 2
 	octave 4
 	G# 1

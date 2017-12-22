@@ -1,5 +1,5 @@
 Music_DefeatedTrainer_Ch0::
-	tempo 224
+	endchannel
 	volume 7, 7
 	duty 2
 	toggleperfectpitch
@@ -96,7 +96,7 @@ Music_DefeatedTrainer_branch_23a76::
 
 
 Music_DefeatedTrainer_Ch1::
-	duty 2
+	endchannel
 	notetype 4, 12, 3
 	octave 4
 	A_ 2
@@ -173,7 +173,7 @@ Music_DefeatedTrainer_branch_23ad2::
 
 
 Music_DefeatedTrainer_Ch2::
-	notetype 4, 1, 0
+	endchannel
 	octave 5
 	D_ 2
 	notetype 4, 1, 0

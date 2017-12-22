@@ -1,5 +1,5 @@
 Music_IntroBattle_Ch0::
-	tempo 98
+	endchannel
 	volume 7, 7
 	duty 3
 	vibrato 6, 3, 4
@@ -91,7 +91,7 @@ Music_IntroBattle_Ch0::
 
 
 Music_IntroBattle_Ch1::
-	duty 3
+	endchannel
 	vibrato 8, 2, 5
 	notetype 12, 12, 2
 	rest 8
@@ -166,7 +166,7 @@ Music_IntroBattle_Ch1::
 
 
 Music_IntroBattle_Ch2::
-	notetype 12, 1, 0
+	endchannel
 	rest 8
 	octave 4
 	D_ 1
@@ -230,7 +230,7 @@ Music_IntroBattle_Ch2::
 
 
 Music_IntroBattle_Ch3::
-	dspeed 6
+	endchannel
 	mutedsnare4 1
 	mutedsnare4 1
 	mutedsnare4 1

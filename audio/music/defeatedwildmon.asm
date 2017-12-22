@@ -1,5 +1,5 @@
 Music_DefeatedWildMon_Ch0::
-	tempo 112
+	endchannel
 	volume 7, 7
 	executemusic
 	duty 3
@@ -68,7 +68,7 @@ Music_DefeatedWildMon_branch_23b8b::
 
 
 Music_DefeatedWildMon_Ch1::
-	executemusic
+	endchannel
 	duty 2
 	notetype 12, 12, 3
 	octave 4
@@ -143,7 +143,7 @@ Music_DefeatedWildMon_branch_23bce::
 
 
 Music_DefeatedWildMon_Ch2::
-	executemusic
+	endchannel
 	notetype 12, 2, 0
 	octave 5
 	E_ 1

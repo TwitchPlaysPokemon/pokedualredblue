@@ -1,5 +1,5 @@
 Music_SSAnne_Ch0::
-	tempo 128
+	endchannel
 	volume 7, 7
 	duty 1
 	vibrato 8, 3, 4
@@ -108,7 +108,7 @@ Music_SSAnne_branch_b3b2::
 
 
 Music_SSAnne_Ch1::
-	duty 0
+	endchannel
 	vibrato 12, 2, 4
 
 Music_SSAnne_branch_b41e::
@@ -283,7 +283,7 @@ Music_SSAnne_branch_b41e::
 
 
 Music_SSAnne_Ch2::
-	notetype 12, 1, 3
+	endchannel
 	rest 16
 	rest 12
 	octave 4

@@ -3,7 +3,7 @@ Music_MeetRival_branch_b119::
 	loopchannel 0, Music_MeetRival_branch_b123
 
 Music_MeetRival_Ch0::
-	tempo 112
+	endchannel
 
 Music_MeetRival_branch_b123::
 	volume 7, 7
@@ -144,7 +144,7 @@ Music_MeetRival_branch_b1a5::
 
 
 Music_MeetRival_Ch1::
-	duty 3
+	endchannel
 	vibrato 10, 2, 6
 	notetype 12, 12, 7
 	octave 4
@@ -249,7 +249,7 @@ Music_MeetRival_branch_b21d::
 
 
 Music_MeetRival_Ch2::
-	notetype 12, 1, 4
+	endchannel
 	octave 5
 	D_ 2
 	rest 2

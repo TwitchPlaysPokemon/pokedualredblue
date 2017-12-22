@@ -1,5 +1,5 @@
 Music_YellowUnusedSong_Ch1::
-	tempo 140
+	endchannel
 	volume 7, 7
 	duty 3
 	vibrato 8, 1, 4
@@ -76,7 +76,7 @@ Music_YellowUnusedSong_branch_82fde::
 
 
 Music_YellowUnusedSong_Ch2::
-	duty 2
+	endchannel
 	notetype 8, 12, 2
 	octave 4
 	D_ 6
@@ -162,7 +162,7 @@ Music_YellowUnusedSong_branch_8302a::
 
 
 Music_YellowUnusedSong_Ch3::
-	notetype 12, 1, 0
+	endchannel
 	vibrato 2, 1, 5
 	rest 16
 	rest 12
@@ -203,7 +203,7 @@ Music_YellowUnusedSong_branch_83075::
 
 
 Music_YellowUnusedSong_Ch4::
-	dspeed 12
+	endchannel
 	snare3 4
 	dspeed 8
 	snare3 2

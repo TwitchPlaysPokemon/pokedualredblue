@@ -1,5 +1,5 @@
 Music_Gym_Ch0::
-	tempo 138
+	endchannel
 	volume 7, 7
 	duty 3
 	vibrato 8, 2, 2
@@ -166,7 +166,7 @@ Music_Gym_branch_bcd8::
 
 
 Music_Gym_Ch1::
-	duty 3
+	endchannel
 	vibrato 10, 2, 5
 	notetype 12, 12, 7
 	octave 4
@@ -289,7 +289,7 @@ Music_Gym_branch_bd82::
 
 
 Music_Gym_Ch2::
-	notetype 12, 1, 1
+	endchannel
 	rest 16
 	rest 10
 	octave 4

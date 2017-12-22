@@ -1,5 +1,5 @@
 Music_MeetProfOak_Ch0::
-	tempo 112
+	endchannel
 	volume 7, 7
 	duty 3
 	toggleperfectpitch
@@ -75,7 +75,7 @@ Music_MeetProfOak_branch_af85::
 
 
 Music_MeetProfOak_Ch1::
-	vibrato 8, 1, 1
+	endchannel
 	duty 2
 	notetype 12, 12, 4
 	octave 3
@@ -209,7 +209,7 @@ Music_MeetProfOak_branch_b005::
 
 
 Music_MeetProfOak_Ch2::
-	notetype 12, 1, 2
+	endchannel
 	rest 10
 	octave 4
 	F# 1

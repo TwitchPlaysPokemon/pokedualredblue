@@ -1,5 +1,5 @@
 Music_MeetMaleTrainer_Ch0::
-	tempo 112
+	endchannel
 	volume 7, 7
 	duty 3
 	vibrato 20, 3, 3
@@ -33,7 +33,7 @@ Music_MeetMaleTrainer_branch_7f78f::
 
 
 Music_MeetMaleTrainer_Ch1::
-	duty 3
+	endchannel
 	vibrato 24, 2, 2
 	notetype 12, 12, 4
 	octave 4
@@ -76,7 +76,7 @@ Music_MeetMaleTrainer_branch_7f7b5::
 
 
 Music_MeetMaleTrainer_Ch2::
-	notetype 12, 1, 0
+	endchannel
 	rest 6
 	octave 4
 	B_ 1

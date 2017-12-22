@@ -1,5 +1,5 @@
 Music_FinalBattle_Ch0::
-	tempo 112
+	endchannel
 	volume 7, 7
 	duty 3
 	vibrato 6, 3, 4
@@ -382,7 +382,7 @@ Music_FinalBattle_branch_23429::
 
 
 Music_FinalBattle_Ch1::
-	duty 3
+	endchannel
 	vibrato 8, 2, 5
 	notetype 12, 12, 2
 	octave 5
@@ -739,7 +739,7 @@ Music_FinalBattle_branch_23710::
 
 
 Music_FinalBattle_Ch2::
-	notetype 12, 1, 1
+	endchannel
 	octave 4
 	E_ 4
 	octave 5

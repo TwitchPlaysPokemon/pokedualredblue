@@ -1,5 +1,5 @@
 Music_GameCorner_Ch0::
-	tempo 120
+	endchannel
 	volume 7, 7
 	duty 3
 	vibrato 12, 3, 4
@@ -184,7 +184,7 @@ Music_GameCorner_branch_7e222::
 
 
 Music_GameCorner_Ch1::
-	duty 2
+	endchannel
 	vibrato 10, 2, 3
 	notetype 12, 12, 6
 	octave 4
@@ -344,7 +344,7 @@ Music_GameCorner_branch_7e2fa::
 
 
 Music_GameCorner_Ch2::
-	notetype 12, 1, 3
+	endchannel
 	octave 5
 	C# 1
 	rest 5

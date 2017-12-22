@@ -1,5 +1,5 @@
 Music_Vermilion_Ch0::
-	tempo 156
+	endchannel
 	volume 7, 7
 	duty 3
 	vibrato 12, 3, 4
@@ -112,7 +112,7 @@ Music_Vermilion_branch_b9f6::
 
 
 Music_Vermilion_Ch1::
-	duty 3
+	endchannel
 	vibrato 10, 2, 3
 
 Music_Vermilion_branch_ba66::
@@ -179,7 +179,7 @@ Music_Vermilion_branch_ba66::
 
 
 Music_Vermilion_Ch2::
-	notetype 12, 1, 0
+	endchannel
 
 Music_Vermilion_branch_baa8::
 	octave 4
@@ -283,7 +283,7 @@ Music_Vermilion_branch_baa8::
 
 
 Music_Vermilion_Ch3::
-	dspeed 12
+	endchannel
 
 Music_Vermilion_branch_bb0e::
 	callchannel Music_Vermilion_branch_bb3f

@@ -1,5 +1,5 @@
 Music_IndigoPlateau_Ch0::
-	tempo 132
+	endchannel
 	volume 7, 7
 	duty 3
 	vibrato 6, 3, 4
@@ -87,7 +87,7 @@ Music_IndigoPlateau_branch_a659::
 
 
 Music_IndigoPlateau_Ch1::
-	duty 3
+	endchannel
 	vibrato 8, 2, 5
 	notetype 12, 12, 2
 	octave 3
@@ -148,7 +148,7 @@ Music_IndigoPlateau_branch_a6af::
 
 
 Music_IndigoPlateau_Ch2::
-	notetype 12, 1, 0
+	endchannel
 	octave 4
 	D_ 2
 	rest 6
@@ -226,7 +226,7 @@ Music_IndigoPlateau_branch_a6fe::
 
 
 Music_IndigoPlateau_Ch3::
-	dspeed 6
+	endchannel
 	mutedsnare2 16
 	mutedsnare2 16
 	mutedsnare2 16

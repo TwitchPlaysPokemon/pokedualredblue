@@ -1,5 +1,5 @@
 Music_Surfing_Ch0::
-	tempo 160
+	endchannel
 	volume 7, 7
 	duty 3
 	vibrato 12, 3, 4
@@ -117,7 +117,7 @@ Music_Surfing_branch_7fa30::
 
 
 Music_Surfing_Ch1::
-	duty 3
+	endchannel
 	vibrato 16, 2, 5
 	notetype 12, 12, 6
 	octave 3
@@ -204,7 +204,7 @@ Music_Surfing_branch_7faae::
 
 
 Music_Surfing_Ch2::
-	notetype 12, 1, 0
+	endchannel
 	rest 12
 	octave 5
 	E_ 6

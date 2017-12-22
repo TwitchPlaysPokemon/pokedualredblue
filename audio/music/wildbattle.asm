@@ -1,5 +1,5 @@
 Music_WildBattle_Ch0::
-	tempo 104
+	endchannel
 	volume 7, 7
 	duty 3
 	vibrato 6, 3, 4
@@ -301,7 +301,7 @@ Music_WildBattle_branch_230e0::
 
 
 Music_WildBattle_Ch1::
-	duty 3
+	endchannel
 	vibrato 8, 2, 5
 	notetype 12, 12, 3
 	octave 4
@@ -463,7 +463,7 @@ Music_WildBattle_branch_23225::
 
 
 Music_WildBattle_Ch2::
-	vibrato 0, 2, 0
+	endchannel
 	notetype 12, 1, 1
 	octave 4
 	C# 1

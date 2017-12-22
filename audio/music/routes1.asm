@@ -1,5 +1,5 @@
 Music_Routes1_Ch0::
-	tempo 152
+	endchannel
 	volume 7, 7
 	vibrato 4, 2, 3
 	duty 2
@@ -107,7 +107,7 @@ Music_Routes1_branch_9be9::
 
 
 Music_Routes1_Ch1::
-	duty 2
+	endchannel
 
 Music_Routes1_branch_9c53::
 	notetype 12, 13, 1
@@ -235,7 +235,7 @@ Music_Routes1_branch_9c8d::
 
 
 Music_Routes1_Ch2::
-	vibrato 8, 2, 5
+	endchannel
 	notetype 12, 1, 3
 
 Music_Routes1_branch_9cdd::
@@ -310,7 +310,7 @@ Music_Routes1_branch_9cdd::
 
 
 Music_Routes1_Ch3::
-	dspeed 12
+	endchannel
 	rest 4
 	mutedsnare1 2
 	rest 2

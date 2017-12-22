@@ -1,5 +1,5 @@
 Music_HallOfFame_Ch0::
-	tempo 112
+	endchannel
 	volume 7, 7
 	duty 3
 	vibrato 12, 2, 2
@@ -32,7 +32,7 @@ Music_HallOfFame_branch_7fbc5::
 
 
 Music_HallOfFame_Ch1::
-	vibrato 8, 2, 5
+	endchannel
 	duty 3
 
 Music_HallOfFame_branch_7fbdf::
@@ -64,7 +64,7 @@ Music_HallOfFame_branch_7fbdf::
 
 
 Music_HallOfFame_Ch2::
-	notetype 12, 1, 2
+	endchannel
 
 Music_HallOfFame_branch_7fbfe::
 	octave 4

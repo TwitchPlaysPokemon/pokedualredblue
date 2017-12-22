@@ -1,5 +1,5 @@
 Music_JigglypuffSong_Ch0::
-	tempo 144
+	endchannel
 	volume 7, 7
 	vibrato 8, 2, 4
 	duty 2
@@ -22,7 +22,7 @@ Music_JigglypuffSong_Ch0::
 
 
 Music_JigglypuffSong_Ch1::
-	vibrato 5, 1, 5
+	endchannel
 	duty 2
 	dutycycle 10
 	notetype 12, 10, 7

@@ -1,5 +1,5 @@
 Music_TitleScreen_Ch0::
-	tempo 144
+	endchannel
 	volume 7, 7
 	vibrato 9, 3, 4
 	duty 3
@@ -155,7 +155,7 @@ Music_TitleScreen_branch_7e55c::
 
 
 Music_TitleScreen_Ch1::
-	vibrato 16, 4, 6
+	endchannel
 	duty 1
 	notetype 12, 14, 1
 	octave 2
@@ -322,7 +322,7 @@ Music_TitleScreen_branch_7e636::
 
 
 Music_TitleScreen_Ch2::
-	notetype 12, 1, 0
+	endchannel
 	octave 3
 	G_ 1
 	rest 1
@@ -460,7 +460,7 @@ Music_TitleScreen_branch_7e6e5::
 
 
 Music_TitleScreen_Ch3::
-	dspeed 6
+	endchannel
 	rest 4
 	snare3 1
 	snare3 1

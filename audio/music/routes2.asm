@@ -1,5 +1,5 @@
 Music_Routes2_Ch0::
-	tempo 152
+	endchannel
 	volume 7, 7
 	vibrato 9, 2, 5
 	duty 1
@@ -143,7 +143,7 @@ Music_Routes2_branch_9dc3::
 
 
 Music_Routes2_Ch1::
-	vibrato 8, 2, 6
+	endchannel
 	duty 3
 
 Music_Routes2_branch_9e54::
@@ -217,7 +217,7 @@ Music_Routes2_branch_9e54::
 
 
 Music_Routes2_Ch2::
-	vibrato 9, 2, 8
+	endchannel
 
 Music_Routes2_branch_9e9e::
 	notetype 12, 1, 1
@@ -325,7 +325,7 @@ Music_Routes2_branch_9e9e::
 
 
 Music_Routes2_Ch3::
-	dspeed 12
+	endchannel
 	snare3 2
 	rest 2
 	snare3 1

@@ -1,5 +1,5 @@
 Music_Cities2_Ch0::
-	tempo 148
+	endchannel
 	volume 7, 7
 	duty 3
 	vibrato 8, 3, 2
@@ -95,7 +95,7 @@ Music_Cities2_branch_b51a::
 
 
 Music_Cities2_Ch1::
-	duty 3
+	endchannel
 	vibrato 8, 2, 3
 	notetype 12, 12, 2
 	octave 4
@@ -281,7 +281,7 @@ Music_Cities2_branch_b58b::
 
 
 Music_Cities2_Ch2::
-	notetype 12, 1, 1
+	endchannel
 	rest 16
 	octave 4
 	E_ 2

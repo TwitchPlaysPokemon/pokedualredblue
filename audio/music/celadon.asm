@@ -1,5 +1,5 @@
 Music_Celadon_Ch0::
-	tempo 144
+	endchannel
 	volume 7, 7
 	duty 3
 	toggleperfectpitch
@@ -108,7 +108,7 @@ Music_Celadon_branch_b6d4::
 
 
 Music_Celadon_Ch1::
-	duty 3
+	endchannel
 	notetype 12, 12, 2
 	octave 4
 	D_ 1
@@ -227,7 +227,7 @@ Music_Celadon_branch_b74a::
 
 
 Music_Celadon_Ch2::
-	notetype 12, 1, 3
+	endchannel
 	rest 8
 	octave 5
 	D_ 1

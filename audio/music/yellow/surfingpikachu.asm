@@ -1,5 +1,5 @@
 Music_SurfingPikachu_Ch1::
-	tempo 117
+	endchannel
 	volume 7, 7
 	duty 3
 	vibrato 8, 1, 4
@@ -163,7 +163,7 @@ Music_SurfingPikachu_branch_82d1a::
 
 
 Music_SurfingPikachu_Ch2::
-	duty 3
+	endchannel
 	vibrato 6, 1, 5
 	notetype 12, 12, 4
 	octave 3
@@ -313,7 +313,7 @@ Music_SurfingPikachu_branch_82de0::
 
 
 Music_SurfingPikachu_Ch3::
-	notetype 12, 1, 0
+	endchannel
 	octave 4
 	B_ 6
 	octave 5

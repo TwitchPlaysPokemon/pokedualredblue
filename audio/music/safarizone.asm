@@ -1,5 +1,5 @@
 Music_SafariZone_Ch0::
-	tempo 132
+	endchannel
 	volume 7, 7
 	vibrato 6, 3, 4
 	toggleperfectpitch
@@ -40,7 +40,7 @@ Music_SafariZone_branch_bc5f::
 
 
 Music_SafariZone_Ch1::
-	duty 2
+	endchannel
 	vibrato 8, 2, 5
 	notetype 12, 10, 2
 	octave 4
@@ -74,7 +74,7 @@ Music_SafariZone_branch_bc89::
 
 
 Music_SafariZone_Ch2::
-	notetype 12, 1, 0
+	endchannel
 	rest 8
 
 Music_SafariZone_branch_bc97::

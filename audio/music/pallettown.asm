@@ -1,5 +1,5 @@
 Music_PalletTown_Ch0::
-	tempo 160
+	endchannel
 	volume 7, 7
 	duty 2
 	notetype 12, 12, 3
@@ -149,7 +149,7 @@ Music_PalletTown_branch_a7ce::
 
 
 Music_PalletTown_Ch1::
-	duty 2
+	endchannel
 
 Music_PalletTown_branch_a861::
 	notetype 12, 13, 3
@@ -263,7 +263,7 @@ Music_PalletTown_branch_a861::
 
 
 Music_PalletTown_Ch2::
-	vibrato 24, 2, 8
+	endchannel
 	notetype 12, 1, 2
 
 Music_PalletTown_branch_a8e3::

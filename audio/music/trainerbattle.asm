@@ -1,5 +1,5 @@
 Music_TrainerBattle_Ch0::
-	tempo 112
+	endchannel
 	volume 7, 7
 	duty 3
 	vibrato 6, 3, 4
@@ -650,7 +650,7 @@ Music_TrainerBattle_branch_22962::
 
 
 Music_TrainerBattle_Ch1::
-	duty 3
+	endchannel
 	vibrato 10, 2, 5
 	notetype 12, 12, 2
 	octave 4
@@ -954,7 +954,7 @@ Music_TrainerBattle_branch_22bfc::
 
 
 Music_TrainerBattle_Ch2::
-	vibrato 0, 2, 0
+	endchannel
 	notetype 12, 1, 4
 	octave 3
 	B_ 1

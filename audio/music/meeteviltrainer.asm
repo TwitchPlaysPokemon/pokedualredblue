@@ -1,5 +1,5 @@
 Music_MeetEvilTrainer_Ch0::
-	tempo 124
+	endchannel
 	volume 7, 7
 	duty 2
 	toggleperfectpitch
@@ -22,7 +22,7 @@ Music_MeetEvilTrainer_branch_7f6ae::
 
 
 Music_MeetEvilTrainer_Ch1::
-	duty 1
+	endchannel
 	notetype 12, 11, 6
 	octave 3
 	B_ 2
@@ -61,7 +61,7 @@ Music_MeetEvilTrainer_branch_7f6c2::
 
 
 Music_MeetEvilTrainer_Ch2::
-	notetype 12, 1, 0
+	endchannel
 	rest 8
 	octave 4
 	F# 1

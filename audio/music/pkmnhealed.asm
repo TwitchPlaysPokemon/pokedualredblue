@@ -1,5 +1,5 @@
 Music_PkmnHealed_Ch0::
-	tempo 144
+	endchannel
 	volume 7, 7
 	duty 2
 	toggleperfectpitch
@@ -20,7 +20,7 @@ Music_PkmnHealed_Ch0::
 
 
 Music_PkmnHealed_Ch1::
-	duty 2
+	endchannel
 	notetype 12, 12, 3
 	octave 4
 	B_ 4
@@ -34,7 +34,7 @@ Music_PkmnHealed_Ch1::
 
 
 Music_PkmnHealed_Ch2::
-	notetype 12, 1, 0
+	endchannel
 	octave 4
 	E_ 2
 	rest 2

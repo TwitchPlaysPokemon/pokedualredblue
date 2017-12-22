@@ -1,5 +1,5 @@
 Music_Pokecenter_Ch0::
-	tempo 144
+	endchannel
 	volume 7, 7
 	duty 3
 	vibrato 10, 2, 2
@@ -150,7 +150,7 @@ Music_Pokecenter_branch_be61::
 
 
 Music_Pokecenter_Ch1::
-	vibrato 8, 2, 5
+	endchannel
 
 Music_Pokecenter_branch_befc::
 	callchannel Music_Pokecenter_branch_bf4e
@@ -249,7 +249,7 @@ Music_Pokecenter_branch_bf60::
 
 
 Music_Pokecenter_Ch2::
-	notetype 12, 1, 0
+	endchannel
 
 Music_Pokecenter_branch_bf72::
 	octave 4

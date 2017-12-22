@@ -1,5 +1,5 @@
 Music_Dungeon3_Ch0::
-	tempo 160
+	endchannel
 	volume 7, 7
 	duty 3
 	toggleperfectpitch
@@ -336,7 +336,7 @@ Music_Dungeon3_branch_7eafc::
 
 
 Music_Dungeon3_Ch1::
-	vibrato 11, 1, 5
+	endchannel
 	duty 3
 
 Music_Dungeon3_branch_7eb6d::
@@ -608,7 +608,7 @@ Music_Dungeon3_branch_7eb6d::
 
 
 Music_Dungeon3_Ch2::
-	notetype 12, 1, 2
+	endchannel
 	rest 16
 	rest 16
 	rest 16
@@ -711,7 +711,7 @@ Music_Dungeon3_Ch2::
 
 
 Music_Dungeon3_Ch3::
-	dspeed 12
+	endchannel
 	rest 16
 	rest 16
 	rest 16

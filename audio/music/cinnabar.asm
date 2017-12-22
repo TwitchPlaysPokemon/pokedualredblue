@@ -1,5 +1,5 @@
 Music_Cinnabar_Ch0::
-	tempo 144
+	endchannel
 	volume 7, 7
 	duty 3
 	vibrato 12, 3, 4
@@ -86,7 +86,7 @@ Music_Cinnabar_branch_b878::
 
 
 Music_Cinnabar_Ch1::
-	duty 3
+	endchannel
 	vibrato 10, 2, 3
 
 Music_Cinnabar_branch_b8d9::
@@ -180,7 +180,7 @@ Music_Cinnabar_branch_b8d9::
 
 
 Music_Cinnabar_Ch2::
-	notetype 12, 1, 0
+	endchannel
 
 Music_Cinnabar_branch_b93f::
 	octave 4

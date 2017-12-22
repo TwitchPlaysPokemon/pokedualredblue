@@ -1,5 +1,5 @@
 Music_Dungeon2_Ch0::
-	tempo 144
+	endchannel
 	volume 7, 7
 	duty 3
 	toggleperfectpitch
@@ -71,7 +71,7 @@ Music_Dungeon2_branch_7e892::
 
 
 Music_Dungeon2_Ch1::
-	vibrato 11, 1, 5
+	endchannel
 
 Music_Dungeon2_branch_7e8db::
 	duty 3
@@ -163,7 +163,7 @@ Music_Dungeon2_branch_7e8db::
 
 
 Music_Dungeon2_Ch2::
-	notetype 12, 1, 3
+	endchannel
 	vibrato 8, 2, 6
 
 Music_Dungeon2_branch_7e940::
@@ -303,7 +303,7 @@ Music_Dungeon2_branch_7e9d1::
 
 
 Music_Dungeon2_Ch3::
-	dspeed 12
+	endchannel
 
 Music_Dungeon2_branch_7e9dd::
 	cymbal1 4

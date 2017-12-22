@@ -1,5 +1,5 @@
 Music_MeetFemaleTrainer_Ch0::
-	tempo 124
+	endchannel
 	volume 7, 7
 	duty 1
 	toggleperfectpitch
@@ -27,7 +27,7 @@ Music_MeetFemaleTrainer_branch_7f70c::
 
 
 Music_MeetFemaleTrainer_Ch1::
-	duty 2
+	endchannel
 	notetype 12, 12, 2
 	octave 3
 	B_ 2
@@ -72,7 +72,7 @@ Music_MeetFemaleTrainer_branch_7f726::
 
 
 Music_MeetFemaleTrainer_Ch2::
-	notetype 12, 1, 0
+	endchannel
 	rest 8
 	octave 5
 	C# 1

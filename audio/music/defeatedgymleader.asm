@@ -1,5 +1,5 @@
 Music_DefeatedGymLeader_Ch0::
-	tempo 112
+	endchannel
 	volume 7, 7
 	duty 3
 	vibrato 18, 3, 1
@@ -163,7 +163,7 @@ Music_DefeatedGymLeader_branch_23ccc::
 
 
 Music_DefeatedGymLeader_Ch1::
-	duty 2
+	endchannel
 	vibrato 24, 2, 4
 	notetype 12, 12, 4
 	octave 4
@@ -353,7 +353,7 @@ Music_DefeatedGymLeader_branch_23d84::
 
 
 Music_DefeatedGymLeader_Ch2::
-	notetype 12, 1, 0
+	endchannel
 	vibrato 16, 1, 2
 	octave 4
 	F# 6

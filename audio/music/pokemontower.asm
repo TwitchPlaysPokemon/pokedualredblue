@@ -1,5 +1,5 @@
 Music_PokemonTower_Ch0::
-	tempo 152
+	endchannel
 	volume 7, 7
 	duty 3
 	toggleperfectpitch
@@ -141,7 +141,7 @@ Music_PokemonTower_branch_7f05a::
 
 
 Music_PokemonTower_Ch1::
-	vibrato 20, 3, 4
+	endchannel
 	duty 3
 	notetype 12, 10, 0
 	octave 5
@@ -293,7 +293,7 @@ Music_PokemonTower_branch_7f0ee::
 
 
 Music_PokemonTower_Ch2::
-	vibrato 4, 1, 1
+	endchannel
 	notetype 12, 1, 3
 	rest 8
 	octave 5
