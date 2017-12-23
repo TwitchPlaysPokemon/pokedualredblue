@@ -840,13 +840,13 @@ Audio1_EnableChannelOutput:
 	cp Ch7
 	jr z, .noiseChannelOrNoSfx
 	cp Ch4
-	jr nc, .skip ; if sfx channel
+	jr nc, .noiseChannelOrNoSfx ; if sfx channel
 ; If this isn't an SFX channel, try the corresponding SFX channel.
 	ld hl, wChannelSoundIDs + Ch4
 	add hl, bc
 	ld a, [hl]
 	and a
-	jr nz, .skip
+	;jr nz, .skip
 .noiseChannelOrNoSfx
 ; If this is the SFX noise channel or a music channel whose corresponding
 ; SFX channel is off, apply stereo panning.

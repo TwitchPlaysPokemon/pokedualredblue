@@ -818,12 +818,12 @@ Audio3_7d66c:
 	cp Ch7
 	jr z, .sfxNoiseChannel
 	cp Ch4
-	jr nc, .skip ; if sfx channel
+	jr nc, .sfxNoiseChannel ; if sfx channel
 	ld hl, wChannelSoundIDs + Ch4
 	add hl, bc
 	ld a, [hl]
 	and a
-	jr nz, .skip
+	;jr nz, .skip
 .sfxNoiseChannel
 	ld a, [wStereoPanning]
 	ld hl, Unknown_7db9b
