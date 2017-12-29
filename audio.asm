@@ -414,7 +414,7 @@ Music_RivalAlternateStart::
 	ld de, Music_MeetRival_branch_b2b5
 
 Audio1_OverwriteChannelPointer:
-	ld a, e
+	ret
 	ld [hli], a
 	ld a, d
 	ld [hli], a
