@@ -11,18 +11,18 @@ AskName:
 	ld a, [wcf91]
 	ld [wd11e], a
 	call GetMonName
-;	Nicknames are now forced
-;	ld hl, DoYouWantToNicknameText
-;	call PrintText
-;	coord hl, 14, 7
-;	lb bc, 8, 15
-;	ld a, TWO_OPTION_MENU
-;	ld [wTextBoxID], a
-;	call DisplayTextBoxID
+	; Nicknames are now forced
+	; ld hl, DoYouWantToNicknameText
+	; call PrintText
+	; coord hl, 14, 7
+	; lb bc, 8, 15
+	; ld a, TWO_OPTION_MENU
+	; ld [wTextBoxID], a
+	; call DisplayTextBoxID
 	pop hl
-;	ld a, [wCurrentMenuItem]
-;	and a
-;	jr nz, .declinedNickname
+	; ld a, [wCurrentMenuItem]
+	; and a
+	; jr nz, .declinedNickname
 	ld a, [wUpdateSpritesEnabled]
 	push af
 	xor a
@@ -30,11 +30,7 @@ AskName:
 	push hl
 	ld a, NAME_MON_SCREEN
 	ld [wNamingScreenType], a
-.forcedNamingLoop
 	call DisplayNamingScreen
-	ld a, [wcf4b]
-	cp "@"
-	jr z, .forcedNamingLoop
 	ld a, [wIsInBattle]
 	and a
 	jr nz, .inBattle
@@ -208,6 +204,9 @@ DisplayNamingScreen:
 	ret
 
 .pressedStart
+	ld a, [wcf4b]
+	cp "@"
+	ret z
 	ld a, 1
 	ld [wNamingScreenSubmitName], a
 	ret
