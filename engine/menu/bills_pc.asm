@@ -303,10 +303,10 @@ BillsPCRelease:
 	jp c, BillsPCMenu
 	ld hl, OnceReleasedText
 	call PrintText
-	call YesNoChoice
+	call NoYesChoice
 	ld a, [wCurrentMenuItem]
 	and a
-	jr nz, .loop
+	jr z, .loop
 	inc a
 	ld [wRemoveMonFromBox], a
 	call RemovePokemon
