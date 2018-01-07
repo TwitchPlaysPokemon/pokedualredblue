@@ -1,5 +1,5 @@
 Music_JigglypuffSong_Ch0::
-	endchannel
+	tempo 144
 	volume 7, 7
 	vibrato 8, 2, 4
 	duty 2
@@ -7,34 +7,34 @@ Music_JigglypuffSong_Ch0::
 	toggleperfectpitch
 	notetype 13, 6, 7
 	octave 4
-	E_ 8
+	rest 8
 	notetype 12, 6, 7
-	B_ 2
-	G# 6
-	F# 8
-	G# 2
-	A_ 6
-	G# 8
-	F# 4
-	G# 4
-	E_ 10
+	rest 2
+	rest 6
+	rest 8
+	rest 2
+	rest 6
+	rest 8
+	rest 4
+	rest 4
+	rest 10
 	endchannel
 
 
 Music_JigglypuffSong_Ch1::
-	endchannel
+	vibrato 5, 1, 5
 	duty 2
 	dutycycle 10
 	notetype 12, 10, 7
 	octave 4
-	E_ 8
-	B_ 2
-	G# 6
-	F# 8
-	G# 2
-	A_ 6
-	G# 8
-	F# 4
-	G# 4
-	E_ 10
+	rest 8
+	rest 2
+	rest 6
+	rest 8
+	rest 2
+	rest 6
+	rest 8
+	rest 4
+	rest 4
+	rest 10
 	endchannel
