@@ -18,7 +18,7 @@ EnterMap::
 	ld hl, wd72e
 	bit 5, [hl] ; did a battle happen immediately before this?
 	res 5, [hl] ; unset the "battle just happened" flag
-	call z, ResetUsingStrengthOutOfBattleBit
+	; call z, ResetUsingStrengthOutOfBattleBit
 	call nz, MapEntryAfterBattle
 	ld hl, wd732
 	ld a, [hl]
