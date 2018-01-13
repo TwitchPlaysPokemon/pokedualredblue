@@ -3,7 +3,6 @@ InitBattleVariables:
 	ld [wSavedTilesetType], a
 	xor a
 	ld [wActionResultOrTookBattleTurn], a
-	ld [wBattleResult], a
 	ld hl, wPartyAndBillsPCSavedMenuItem
 	ld [hli], a
 	ld [hli], a
@@ -35,4 +34,6 @@ InitBattleVariables:
 	ld a, BATTLE_TYPE_SAFARI
 	ld [wBattleType], a
 .notSafariBattle
+	ld a, $02
+	ld [wBattleResult], a
 	jpab PlayBattleMusic
