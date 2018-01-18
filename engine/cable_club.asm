@@ -837,7 +837,12 @@ TradeCenter_Trade:
 	call LoadHpBarAndStatusTilePatterns
 	xor a
 	ld [wUnusedCC5B], a
-	ld a, [hSerialConnectionStatus]
+	IF DEF(_BLUE)
+		ld a, USING_INTERNAL_CLOCK
+	ENDC
+	IF DEF(_RED)
+		ld a, USING_EXTERNAL_CLOCK
+	ENDC
 	cp USING_EXTERNAL_CLOCK
 	jr z, .usingExternalClock
 	predef InternalClockTradeAnim

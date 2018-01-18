@@ -506,7 +506,12 @@ MonWasReleasedText:
 	db "@"
 
 CableClubLeftGameboy::
-	ld a, [hSerialConnectionStatus]
+	IF DEF(_BLUE)
+		ld a, USING_INTERNAL_CLOCK
+	ENDC
+	IF DEF(_RED)
+		ld a, USING_EXTERNAL_CLOCK
+	ENDC
 	cp USING_EXTERNAL_CLOCK
 	ret z
 	ld a, [wSpriteStateData1 + 9] ; player's sprite facing direction
@@ -523,7 +528,12 @@ CableClubLeftGameboy::
 	tx_pre_jump JustAMomentText
 
 CableClubRightGameboy::
-	ld a, [hSerialConnectionStatus]
+	IF DEF(_BLUE)
+		ld a, USING_INTERNAL_CLOCK
+	ENDC
+	IF DEF(_RED)
+		ld a, USING_EXTERNAL_CLOCK
+	ENDC
 	cp USING_INTERNAL_CLOCK
 	ret z
 	ld a, [wSpriteStateData1 + 9] ; player's sprite facing direction

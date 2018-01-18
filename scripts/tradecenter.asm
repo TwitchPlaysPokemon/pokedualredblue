@@ -1,6 +1,11 @@
 TradeCenterScript:
 	call EnableAutoTextBoxDrawing
-	ld a, [hSerialConnectionStatus]
+	IF DEF(_BLUE)
+		ld a, USING_INTERNAL_CLOCK
+	ENDC
+	IF DEF(_RED)
+		ld a, USING_EXTERNAL_CLOCK
+	ENDC
 	cp USING_INTERNAL_CLOCK
 	ld a, SPRITE_FACING_LEFT
 	jr z, .next
@@ -21,7 +26,12 @@ TradeCenterScript:
 	ld [hl], a
 	ld a, SPRITE_FACING_LEFT
 	ld [wSpriteStateData1 + $19], a
-	ld a, [hSerialConnectionStatus]
+	IF DEF(_BLUE)
+		ld a, USING_INTERNAL_CLOCK
+	ENDC
+	IF DEF(_RED)
+		ld a, USING_EXTERNAL_CLOCK
+	ENDC
 	cp USING_INTERNAL_CLOCK
 	ret z
 	ld a, $7
