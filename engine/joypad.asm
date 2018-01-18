@@ -4,7 +4,7 @@ _Joypad::
 
 	ld a, [hJoyInput]
 	cp A_BUTTON + B_BUTTON + SELECT + START ; soft reset
-	jp z, TrySoftReset
+	jp z, DiscardButtonPresses
 
 	ld b, a
 	ld a, [hJoyLast]
