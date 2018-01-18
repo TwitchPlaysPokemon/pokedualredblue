@@ -2912,7 +2912,7 @@ GetTrainerInformation::
 	jp BankswitchBack
 .linkBattle
 	ld hl, wTrainerPicPointer
-	ld de, RedPicFront
+	ld de, Rival1Pic
 	ld [hl], e
 	inc hl
 	ld [hl], d
