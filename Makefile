@@ -10,17 +10,17 @@ pokered_obj := audio_red.o main_red.o text_red.o wram_red.o
 pokeblue_obj := audio_blue.o main_blue.o text_blue.o wram_blue.o
 
 .SUFFIXES:
-.SUFFIXES: .asm .o .gbc .png .2bpp .1bpp .pic
+.SUFFIXES: .asm .o .gb .png .2bpp .1bpp .pic
 .SECONDEXPANSION:
 # Suppress annoying intermediate file deletion messages.
 .PRECIOUS: %.2bpp
 .PHONY: all clean red blue compare
 
-roms := pokered.gbc pokeblue.gbc
+roms := pokered.gb pokeblue.gb
 
 all: $(roms)
-red: pokered.gbc
-blue: pokeblue.gbc
+red: pokered.gb
+blue: pokeblue.gb
 
 # For contributors to make sure a change didn't affect the contents of the rom.
 compare: red blue
@@ -43,7 +43,7 @@ $(pokeblue_obj): %_blue.o: %.asm $$(dep)
 pokered_opt  = -jsv -k 01 -l 0x33 -m 0x13 -p 0 -r 03 -t "POKEMON RED"
 pokeblue_opt = -jsv -k 01 -l 0x33 -m 0x13 -p 0 -r 03 -t "POKEMON BLUE"
 
-%.gbc: $$(%_obj)
+%.gb: $$(%_obj)
 	rgblink -n $*.sym -l pokered.link -o $@ $^
 	rgbfix $($*_opt) $@
 	sort $*.sym -o $*.sym
