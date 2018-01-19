@@ -49,10 +49,10 @@ LoadSpecialWarpData:
 	jr nz, .notColosseum
 	ld hl, ColosseumSpec1
 	IF DEF(_BLUE)
-		ld a, USING_EXTERNAL_CLOCK
+		ld a, USING_INTERNAL_CLOCK
 	ENDC
 	IF DEF(_RED)
-		ld a, USING_INTERNAL_CLOCK
+		ld a, USING_EXTERNAL_CLOCK
 	ENDC
 	cp USING_INTERNAL_CLOCK
 	jr z, .copyWarpData
