@@ -900,7 +900,7 @@ CableClub_Run:
 	cp LINK_STATE_RESET ; this is never used
 	ret nz
 	predef EmptyFunc3
-	jp Init
+	jp SoftReset
 .doBattleOrTrade
 	call CableClub_DoBattleOrTrade
 	ld hl, Club_GFX
