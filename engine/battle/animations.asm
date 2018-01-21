@@ -1247,12 +1247,12 @@ AnimationWaterDropletsEverywhere:
 	ld a, 16
 	ld [wBaseCoordY], a
 	ld a, 0
-	ld [wUnusedD08A], a
+	ld [wUnusedD09B], a
 	call _AnimationWaterDroplets
 	ld a, 24
 	ld [wBaseCoordY], a
 	ld a, 32
-	ld [wUnusedD08A], a
+	ld [wUnusedD09B], a
 	call _AnimationWaterDroplets
 	dec d
 	jr nz, .loop

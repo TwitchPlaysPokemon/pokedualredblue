@@ -62,6 +62,8 @@ VermilionGymScript3:
 	ld [wJoyIgnore], a
 
 VermilionGymScript_5caaa:
+	CheckEvent EVENT_GOT_TM24
+	jp nz, VermilionGymScript_5ca8a
 	ld a, $6
 	ld [hSpriteIndexOrTextID], a
 	call DisplayTextID
@@ -138,6 +140,7 @@ VermilionGymText1:
 	call DisableWaitingAfterTextDisplay
 	jr .asm_5cb6a
 .asm_5cb31
+	TryRematch $3
 	ld hl, VermilionGymText_5cb72
 	call PrintText
 	jr .asm_5cb6a
@@ -150,6 +153,7 @@ VermilionGymText1:
 	ld hl, ReceivedThunderbadgeText
 	ld de, ReceivedThunderbadgeText
 	call SaveEndBattleTextPointers
+.start_battle
 	ld a, [H_SPRITEINDEX]
 	ld [wSpriteIndex], a
 	call EngageMapTrainer

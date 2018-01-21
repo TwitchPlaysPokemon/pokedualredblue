@@ -1890,7 +1890,10 @@ wNewSlotMachineBallTile:: ; d08a
 wCoordAdjustmentAmount:: ; d08a
 ; how much to add to the X/Y coord
 
-wUnusedD08A:: ; d08a
+wGymLeaderRematch:: ; d08a
+; if set to 1 - 8, a rematch is available for that gym leader.
+; 0 if no rematch is available. 
+; use gameshark: 01XX8AD0 where XX is 01-08 to test.
 	ds 1
 
 wSpiralBallsBaseX:: ; d08b

@@ -137,6 +137,8 @@ ViridianGymScript3:
 	ld a, $f0
 	ld [wJoyIgnore], a
 ViridianGymScript3_74995:
+	CheckEvent EVENT_GOT_TM27
+	jp nz, ViridianGymScript_748d6
 	ld a, $c
 	ld [hSpriteIndexOrTextID], a
 	call DisplayTextID
@@ -268,6 +270,7 @@ ViridianGymText1:
 	call DisableWaitingAfterTextDisplay
 	jr .asm_6dff7
 .asm_9fc95
+	TryRematch $8
 	ld a, $1
 	ld [wDoNotWaitForButtonPressAfterDisplayingText], a
 	ld hl, ViridianGymText_74ad9
@@ -289,6 +292,7 @@ ViridianGymText1:
 	ld hl, ViridianGymText_74ad3
 	ld de, ViridianGymText_74ad3
 	call SaveEndBattleTextPointers
+.start_battle
 	ld a, [H_SPRITEINDEX]
 	ld [wSpriteIndex], a
 	call EngageMapTrainer

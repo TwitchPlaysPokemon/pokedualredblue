@@ -11,6 +11,7 @@ ViridianCityScriptPointers:
 	dw ViridianCityScript3
 
 ViridianCityScript0:
+	callab ShowHideGymLeaderGiovanni
 	call ViridianCityScript_1900b
 	jp ViridianCityScript_1903d
 

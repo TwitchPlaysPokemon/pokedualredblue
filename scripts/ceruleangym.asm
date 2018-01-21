@@ -43,6 +43,8 @@ CeruleanGymScript3:
 	ld [wJoyIgnore], a
 
 CeruleanGymScript_5c70d:
+	CheckEvent EVENT_GOT_TM11
+	jp nz, CeruleanGymScript_5c6ed
 	ld a, $5
 	ld [hSpriteIndexOrTextID], a
 	call DisplayTextID
@@ -109,6 +111,7 @@ CeruleanGymText1:
 	call DisableWaitingAfterTextDisplay
 	jr .asm_5c7bb
 .asm_5c785
+	TryRematch $2
 	ld hl, CeruleanGymText_5c7c3
 	call PrintText
 	jr .asm_5c7bb
@@ -121,6 +124,7 @@ CeruleanGymText1:
 	ld hl, CeruleanGymText_5c7d8
 	ld de, CeruleanGymText_5c7d8
 	call SaveEndBattleTextPointers
+.start_battle
 	ld a, [H_SPRITEINDEX]
 	ld [wSpriteIndex], a
 	call EngageMapTrainer

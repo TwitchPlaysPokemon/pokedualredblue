@@ -140,6 +140,8 @@ CinnabarGymScript3:
 	ld a, $f0
 	ld [wJoyIgnore], a
 CinnabarGymScript3_75857:
+	CheckEvent EVENT_GOT_TM38
+	jp nz, CinnabarGymScript_75792
 	ld a, $a
 	ld [hSpriteIndexOrTextID], a
 	call DisplayTextID
@@ -214,6 +216,7 @@ CinnabarGymText1:
 	call DisableWaitingAfterTextDisplay
 	jp TextScriptEnd
 .asm_3012f
+	TryRematch $7
 	ld hl, BlaineFireBlastText
 	call PrintText
 	jp TextScriptEnd
@@ -223,6 +226,7 @@ CinnabarGymText1:
 	ld hl, BlaineEndBattleText
 	ld de, BlaineEndBattleText
 	call SaveEndBattleTextPointers
+.start_battle
 	ld a, $7
 	ld [wGymLeaderNo], a
 	jp CinnabarGymScript_758b7

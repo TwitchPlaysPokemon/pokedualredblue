@@ -43,6 +43,8 @@ FuchsiaGymScript3:
 	ld a, $f0
 	ld [wJoyIgnore], a
 FuchsiaGymScript3_75497:
+	CheckEvent EVENT_GOT_TM06
+	jp nz, FuchsiaGymScript_75477
 	ld a, $9
 	ld [hSpriteIndexOrTextID], a
 	call DisplayTextID
@@ -149,6 +151,7 @@ FuchsiaGymText1:
 	call DisableWaitingAfterTextDisplay
 	jr .asm_e84c6
 .asm_adc3b
+	TryRematch $5
 	ld hl, KogaExplainToxicText
 	call PrintText
 	jr .asm_e84c6
@@ -161,6 +164,7 @@ FuchsiaGymText1:
 	ld hl, KogaAfterBattleText
 	ld de, KogaAfterBattleText
 	call SaveEndBattleTextPointers
+.start_battle
 	ld a, [H_SPRITEINDEX]
 	ld [wSpriteIndex], a
 	call EngageMapTrainer

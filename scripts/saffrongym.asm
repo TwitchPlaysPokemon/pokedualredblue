@@ -43,6 +43,8 @@ SaffronGymScript3:
 	ld [wJoyIgnore], a
 
 SaffronGymText_5d068:
+	CheckEvent EVENT_GOT_TM46
+	jp nz, SaffronGymText_5d048
 	ld a, $a
 	ld [hSpriteIndexOrTextID], a
 	call DisplayTextID
@@ -159,6 +161,7 @@ SaffronGymText1:
 	call DisableWaitingAfterTextDisplay
 	jr .asm_5d15f
 .asm_5d12c
+	TryRematch $6
 	ld hl, SaffronGymText_5d16e
 	call PrintText
 	jr .asm_5d15f
@@ -171,6 +174,7 @@ SaffronGymText1:
 	ld hl, SaffronGymText_5d167
 	ld de, SaffronGymText_5d167
 	call SaveEndBattleTextPointers
+.start_battle
 	ld a, [H_SPRITEINDEX]
 	ld [wSpriteIndex], a
 	call EngageMapTrainer

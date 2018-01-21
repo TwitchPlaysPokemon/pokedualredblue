@@ -43,6 +43,8 @@ CeladonGymScript3:
 	ld [wJoyIgnore], a
 
 CeladonGymText_48963:
+	CheckEvent EVENT_GOT_TM21
+	jp nz, CeladonGymText_48943
 	ld a, $9
 	ld [hSpriteIndexOrTextID], a
 	call DisplayTextID
@@ -158,6 +160,7 @@ CeladonGymText1:
 	call DisableWaitingAfterTextDisplay
 	jr .asm_48a5b
 .asm_48a25
+	TryRematch $4
 	ld hl, CeladonGymText_48a68
 	call PrintText
 	jr .asm_48a5b
@@ -170,6 +173,7 @@ CeladonGymText1:
 	ld hl, CeladonGymText_48a63
 	ld de, CeladonGymText_48a63
 	call SaveEndBattleTextPointers
+.start_battle
 	ld a, [H_SPRITEINDEX]
 	ld [wSpriteIndex], a
 	call EngageMapTrainer

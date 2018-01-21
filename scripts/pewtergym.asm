@@ -43,6 +43,8 @@ PewterGymScript3:
 	ld [wJoyIgnore], a
 
 PewterGymScript_5c3df:
+	CheckEvent EVENT_GOT_TM34
+	jp nz, PewterGymScript_5c3bf
 	ld a, $4
 	ld [hSpriteIndexOrTextID], a
 	call DisplayTextID
@@ -108,6 +110,7 @@ PewterGymText1:
 	call DisableWaitingAfterTextDisplay
 	jr .asm_5c49b
 .asm_5c462
+	TryRematch $1
 	ld hl, PewterGymText_5c4a3
 	call PrintText
 	jr .asm_5c49b
@@ -120,6 +123,7 @@ PewterGymText1:
 	ld hl, PewterGymText_5c4bc
 	ld de, PewterGymText_5c4bc
 	call SaveEndBattleTextPointers
+.start_battle
 	ld a, [H_SPRITEINDEX]
 	ld [wSpriteIndex], a
 	call EngageMapTrainer
