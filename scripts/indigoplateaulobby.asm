@@ -5,7 +5,7 @@ IndigoPlateauLobbyScript:
 	bit 6, [hl]
 	res 6, [hl]
 	ret z
-	ResetEvent EVENT_VICTORY_ROAD_1_BOULDER_ON_SWITCH
+	;ResetEvent EVENT_VICTORY_ROAD_1_BOULDER_ON_SWITCH
 	ld hl, wBeatLorelei
 	bit 1, [hl]
 	res 1, [hl]
