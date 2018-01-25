@@ -85,8 +85,11 @@ _TM21NoRoomText::
 
 _CeladonGymBattleText2::
 	text "Hey!"
-
+IF DEF(_RED)
 	para "You are not"
+ELSE
+	para "Only grass types"
+ENDC
 	line "allowed in here!"
 	done
 
@@ -122,7 +125,11 @@ _CeladonGymAfterBattleText3::
 	done
 
 _CeladonGymBattleText4::
+IF DEF(_RED)
 	text "Aren't you the"
+ELSE
+	text "Did you see a"
+ENDC
 	line "peeping Tom?"
 	done
 
@@ -132,8 +139,13 @@ _CeladonGymEndBattleText4::
 	prompt
 
 _CeladonGymAfterBattleText4::
+IF DEF(_RED)
 	text "Oh, you weren't"
 	line "peeping? We get a"
+ELSE
+	text "Be careful in"
+	line "here. We get a"
+ENDC
 	cont "lot of gawkers!"
 	done
 
@@ -201,7 +213,11 @@ _CeladonGymBattleText8::
 
 	para "You better not"
 	line "underestimate"
+IF DEF(_RED)
 	cont "girl power!"
+ELSE
+	cont "flower power!"
+ENDC
 	done
 
 _CeladonGymEndBattleText8::

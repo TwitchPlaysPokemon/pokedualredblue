@@ -8,9 +8,15 @@ _CeladonCityText1::
 	done
 
 _CeladonCityText2::
+IF DEF(_RED)
 	text "Heheh! This GYM"
 	line "is great! It's"
 	cont "full of women!"
+ELSE
+	text "Oh, uh, don't"
+	line "mind me! Pretend"
+	cont "I'm not here."
+ENDC
 	done
 
 _CeladonCityText3::

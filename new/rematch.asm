@@ -48,6 +48,6 @@ RematchYouLoseText:
     para "That was"
 	line "unfortunate."
 
-    para "Come back and try"
-    line "again in 8 hours."
+    para "You'll have to try"
+    line "harder next time."
 	prompt

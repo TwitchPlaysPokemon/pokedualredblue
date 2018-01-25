@@ -79,7 +79,11 @@ _MtMoon1AfterBattleText6::
 	done
 
 _MtMoon1BattleText7::
+IF DEF(_RED)
 	text "Suspicious men"
+ELSE
+	text "Suspicious thugs"
+ENDC
 	line "are in the cave."
 	cont "What about you?"
 	done

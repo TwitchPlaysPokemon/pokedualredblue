@@ -120,7 +120,11 @@ _Route9AfterBattleText7::
 
 _Route9BattleText8::
 	text "Hahahaha!"
+IF DEF(_RED)
 	line "Come on, dude!"
+ELSE
+	line "Come on, lady!"
+ENDC
 	done
 
 _Route9EndBattleText8::
