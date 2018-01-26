@@ -45,7 +45,7 @@ _ViridianGymText_74ad9::
     cont "for all!"
     
     para "Until that day..."
-	cont "Farewell!@@"
+	line "Farewell!@@"
 
 _ViridianGymText12::
 	text "The EARTHBADGE"

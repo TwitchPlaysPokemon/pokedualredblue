@@ -1,4 +1,5 @@
 StartGymLeaderRematch::
+    ld hl, RematchStartTextPointers
 	call LoadRematchText
 	call PrintText
     xor a
@@ -6,8 +7,12 @@ StartGymLeaderRematch::
 	ld hl, wd72d
 	set 6, [hl]
 	set 7, [hl]
-	pop de; RematchLoseText
-	pop hl; RematchWinText
+    ld hl, RematchLoseTextPointers
+	call LoadRematchText
+	ld d, h
+    ld e, l
+	ld hl, RematchWinTextPointers
+    call LoadRematchText
 	call SaveEndBattleTextPointers
     ret
 
@@ -27,19 +32,20 @@ ShowHideGymLeaderGiovanni::
 .done
     ret
 
+; gets the address of the text
+; pointed to by the pointer table in hl
+; and leaves it in hl
 LoadRematchText:
-	ld de, 0
 	ld a, [wGymLeaderNo]
-	sla a
-	ld d, a
-	ld hl, RematchLoseTextPointers
-	add hl, de
-	push hl
-	ld hl, RematchWinTextPointers
-	add hl, de
-	push hl
-	ld hl, RematchStartTextPointers
-	add hl, de
+	sla a ; no need for carry check, GymLeaderNo shouldn't be over 8
+	add l
+    ld l, a
+    jr nc, .noCarry
+    inc h
+.noCarry
+    ld a, [hli]
+	ld h, [hl]
+	ld l, a
 	ret
 
 RematchStartTextPointers:
@@ -106,11 +112,10 @@ BrockRematchStartText:
     cont "you would be."
     
     para "Let me see how"
-    cont "your abilities"
+    line "your abilities"
     cont "have progressed."
-    
-    para "Show me your"
-    cont "best!"
+
+    para "Show me your best!"
 	done
     
 BrockRematchYouWinText:
@@ -189,7 +194,7 @@ ErikaRematchStartText:
 ErikaRematchYouWinText:  
     text "I"
 	line "think I may"
-    line "remember you..."
+    cont "remember you..."
     
     para "Lovely weather,"
     line "isn't it?"
@@ -211,7 +216,7 @@ KogaRematchStartText:
 KogaRematchYouWinText:
     text "Once"
 	line "again, you have"
-    line "proven your"
+    cont "proven your"
     cont "worth."
 	prompt
     
@@ -242,7 +247,7 @@ SabrinaRematchYouWinText:
 SabrinaRematchYouLoseText:
     text "It"
     line "seems you didn't"
-    line "foresee this"
+    cont "foresee this"
 	cont "outcome!"
 	prompt
 
