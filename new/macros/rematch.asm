@@ -10,6 +10,8 @@ CheckRematch: MACRO
 TryRematch: MACRO
 	CheckRematch \1
 	jr nz, .not_rematch
+	ld a, \1
+	ld [wGymLeaderNo], a
 	callab StartGymLeaderRematch
 	jr .start_battle
 .not_rematch
