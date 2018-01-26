@@ -37,8 +37,14 @@ _ViridianGymText_74ad9::
 	line "life to the study"
 	cont "of #MON!"
 
-	para "Let us meet again"
-	line "some day!"
+	para "One day we will"
+    line "battle again."
+    cont "And when we do,"
+    cont "I shall destroy"
+    cont "you once and"
+    cont "for all!"
+    
+    para "Until that day..."
 	cont "Farewell!@@"
 
 _ViridianGymText12::
