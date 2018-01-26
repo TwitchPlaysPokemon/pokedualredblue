@@ -2335,17 +2335,17 @@ ItemUseNotYoursToUse:
 	jr ItemUseFailed
 
 ThrowBallAtTrainerMon:
-	call RunDefaultPaletteCommand
-	call LoadScreenTilesFromBuffer1 ; restore saved screen
-	call Delay3
-	ld a,TOSS_ANIM
-	ld [wAnimationID],a
-	predef MoveAnimation ; do animation
-	ld hl,ThrowBallAtTrainerMonText1
-	call PrintText
+	; call RunDefaultPaletteCommand
+	; call LoadScreenTilesFromBuffer1 ; restore saved screen
+	; call Delay3
+	; ld a,TOSS_ANIM
+	; ld [wAnimationID],a
+	; predef MoveAnimation ; do animation
+	; ld hl,ThrowBallAtTrainerMonText1
+	; call PrintText
 	ld hl,ThrowBallAtTrainerMonText2
-	call PrintText
-	jr RemoveUsedItem
+	; call PrintText
+	jr ItemUseFailed
 
 NoCyclingAllowedHere:
 	ld hl,NoCyclingAllowedHereText
