@@ -139,7 +139,7 @@ SeafoamIslands5TextPointers:
 
 ArticunoTrainerHeader:
 	dbEventFlagBit EVENT_BEAT_ARTICUNO
-	db ($0 << 4) ; trainer's view range
+	db ($1 << 4) ; trainer's view range
 	dwEventFlagAddress EVENT_BEAT_ARTICUNO
 	dw ArticunoBattleText ; TextBeforeBattle
 	dw ArticunoBattleText ; TextAfterBattle

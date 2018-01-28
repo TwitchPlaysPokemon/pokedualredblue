@@ -13,6 +13,7 @@ VictoryRoad3Script_44996:
 	bit 5, [hl]
 	res 5, [hl]
 	ret z
+	ResetUncaughtPokemon MOLTRES
 	CheckEventHL EVENT_VICTORY_ROAD_3_BOULDER_ON_SWITCH1
 	ret z
 	ld a, $1d

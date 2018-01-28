@@ -130,7 +130,7 @@ VictoryRoad2TrainerHeader4:
 
 MoltresTrainerHeader:
 	dbEventFlagBit EVENT_BEAT_MOLTRES
-	db ($0 << 4) ; trainer's view range
+	db ($1 << 4) ; trainer's view range
 	dwEventFlagAddress EVENT_BEAT_MOLTRES
 	dw MoltresBattleText ; TextBeforeBattle
 	dw MoltresBattleText ; TextAfterBattle

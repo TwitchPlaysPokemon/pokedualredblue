@@ -24,6 +24,7 @@ VictoryRoad1ScriptPointers:
 	dw EndTrainerBattle
 
 VictoryRoad1Script0:
+	ResetUncaughtPokemon MOLTRES
 	CheckEvent EVENT_VICTORY_ROAD_1_BOULDER_ON_SWITCH
 	jp nz, CheckFightingMapTrainers
 	ld hl, CoordsData_5da5c

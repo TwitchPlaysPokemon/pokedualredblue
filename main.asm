@@ -948,6 +948,7 @@ INCLUDE "engine/battle/core.asm"
 SECTION "bank10",ROMX,BANK[$10]
 
 INCLUDE "engine/menu/pokedex.asm"
+INCLUDE "new/dexcheck.asm"
 INCLUDE "engine/trade.asm"
 INCLUDE "engine/intro.asm"
 INCLUDE "engine/trade2.asm"

@@ -1,5 +1,6 @@
 SeafoamIslands4Script:
 	call EnableAutoTextBoxDrawing
+	ResetUncaughtPokemon ARTICUNO
 	ld hl, wFlags_0xcd60
 	bit 7, [hl]
 	res 7, [hl]

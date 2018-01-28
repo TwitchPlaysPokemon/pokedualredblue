@@ -102,7 +102,7 @@ Voltorb7TrainerHeader:
 
 ZapdosTrainerHeader:
 	dbEventFlagBit EVENT_BEAT_ZAPDOS, 1
-	db 0 ; view range
+	db ($1 << 4) ; view range
 	dwEventFlagAddress EVENT_BEAT_ZAPDOS, 1
 	dw ZapdosBattleText ; TextBeforeBattle
 	dw ZapdosBattleText ; TextAfterBattle

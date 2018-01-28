@@ -1,4 +1,5 @@
 Route10Script:
+	ResetUncaughtPokemon ZAPDOS
 	call EnableAutoTextBoxDrawing
 	ld hl, Route10TrainerHeader0
 	ld de, Route10ScriptPointers

@@ -1,5 +1,7 @@
 UnknownDungeon2Script:
-	jp EnableAutoTextBoxDrawing
+	call EnableAutoTextBoxDrawing
+	ResetUncaughtPokemon MEWTWO
+	ret
 
 UnknownDungeon2TextPointers:
 	dw PickUpItemText
