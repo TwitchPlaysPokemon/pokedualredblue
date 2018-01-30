@@ -76,3 +76,14 @@ _Lab4Text_610bd::
 	text "Aiyah! You come"
 	line "again!"
 	done
+
+_Lab4Text3::
+	text "It's locked with a"
+	line "password."
+	done
+
+_Lab4Text4::
+	text "The screen is"
+	line "swarming with"
+	cont "flying toasters."
+	done

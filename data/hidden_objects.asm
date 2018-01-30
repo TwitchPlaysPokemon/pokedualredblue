@@ -773,12 +773,12 @@ IndigoPlateauLobbyHiddenObjects:
 	dw OpenPokemonCenterPC
 	db $FF
 CinnabarLab4HiddenObjects:
-	db $04,$00,$04
-	db BANK(OpenPokemonCenterPC)
-	dw OpenPokemonCenterPC
-	db $04,$02,$04
-	db BANK(OpenPokemonCenterPC)
-	dw OpenPokemonCenterPC
+	; db $04,$00,$04
+	; db BANK(OpenPokemonCenterPC)
+	; dw OpenPokemonCenterPC
+	; db $04,$02,$04
+	; db BANK(OpenPokemonCenterPC)
+	; dw OpenPokemonCenterPC
 	db $FF
 BikeShopHiddenObjects:
 	db $00,$01,$d0

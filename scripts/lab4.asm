@@ -4,6 +4,8 @@ Lab4Script:
 Lab4TextPointers:
 	dw Lab4Text1
 	dw Lab4Text2
+	dw Lab4Text3
+	dw Lab4Text4
 
 Lab4Script_GetFossilsInBag:
 ; construct a list of all fossils in the player's bag
@@ -107,3 +109,11 @@ Lab4Text2:
 
 LoadFossilItemAndMonNameBank1D:
 	jpba LoadFossilItemAndMonName
+
+Lab4Text3:
+	TX_FAR _Lab4Text3
+	db "@"
+
+Lab4Text4:
+	TX_FAR _Lab4Text4
+	db "@"
