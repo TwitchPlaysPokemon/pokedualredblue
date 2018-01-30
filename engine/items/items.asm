@@ -453,7 +453,20 @@ ItemUseBall:
 	ld hl,ItemUseBallText04
 	jp z,.printMessage
 
+; Check if overleveled
+	ld a,[wEnemyMonLevel]
+	cp a, 101
+	jr c, .saveHP
+	ld a, 0
+	ld hl,wEnemyMonHP
+	ld [hli], a
+	inc a
+	ld [hli], a
+	ld a, 50 
+	ld [wEnemyMonLevel], a
+
 ; Save current HP.
+.saveHP
 	ld hl,wEnemyMonHP
 	ld a,[hli]
 	push af
