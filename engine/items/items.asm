@@ -473,7 +473,7 @@ ItemUseBall:
 	ld hl,wEnemyBattleStatus3
 	bit Transformed,[hl]
 	jr z,.notTransformed
-	ld a,DITTO
+	ld a,[wWildMonSpecies]
 	ld [wEnemyMonSpecies2],a
 	jr .skip6
 
