@@ -422,27 +422,19 @@ DisplayTwoOptionMenu:
 	cp NO_YES_MENU
 	jr nz, .notNoYesMenu
 ; No/Yes menu
-; this menu type ignores the B button
 ; it only seems to be used when confirming the deletion of a save file
+; and confirming release
 	xor a
 	ld [wTwoOptionMenuID], a
-	ld a, [wFlags_0xcd60]
-	push af
-	push hl
-	ld hl, wFlags_0xcd60
-	bit 5, [hl]
-	set 5, [hl] ; don't play sound when A or B is pressed in menu
-	pop hl
-.noYesMenuInputLoop
 	call HandleMenuInput
-	bit 1, a ; A button pressed?
-	jr nz, .noYesMenuInputLoop ; try again if A was not pressed
-	pop af
 	pop hl
-	ld [wFlags_0xcd60], a
-	ld a, SFX_PRESS_AB
-	call PlaySound
-	jr .pressedAButton
+	bit 1, a ; A button pressed?
+	jr z, .pressedAButton 
+.forceFirstMenuItem
+	ld a, 0
+	ld [wCurrentMenuItem], a
+	ld [wChosenMenuItem], a
+	jr .choseFirstMenuItem
 .notNoYesMenu
 	xor a
 	ld [wTwoOptionMenuID], a
@@ -455,7 +447,7 @@ DisplayTwoOptionMenu:
 	ld [wChosenMenuItem], a
 	and a
 	jr nz, .choseSecondMenuItem
-; chose first menu item
+.choseFirstMenuItem
 	ld a, CHOSE_FIRST_ITEM
 	ld [wMenuExitMethod], a
 	ld c, 15
