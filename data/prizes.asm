@@ -12,61 +12,61 @@ NoThanksText:
 	db "NO THANKS@"
 
 PrizeMenuMon1Entries:
-	db ABRA
-	db CLEFAIRY
 IF DEF(_RED)
 	db NIDORINA
 ENDC
 IF DEF(_BLUE)
 	db NIDORINO
 ENDC
+	db CLEFAIRY
+	db ABRA
 	db "@"
 
 PrizeMenuMon1Cost:
+	coins 1200
 IF DEF(_RED)
-	coins 180
 	coins 500
+	coins 180
 ENDC
 IF DEF(_BLUE)
-	coins 120
 	coins 750
+	coins 120
 ENDC
-	coins 1200
 	db "@"
 
 PrizeMenuMon2Entries:
+	db PORYGON
 IF DEF(_RED)
-	db DRATINI
 	db SCYTHER
+	db DRATINI
 ENDC
 IF DEF(_BLUE)
-	db PINSIR
 	db DRATINI
+	db PINSIR
 ENDC
-	db PORYGON
 	db "@"
 
 PrizeMenuMon2Cost:
 IF DEF(_RED)
-	coins 2800
-	coins 5500
 	coins 9999
+	coins 5500
+	coins 2800
 ENDC
 IF DEF(_BLUE)
-	coins 2500
-	coins 4600
 	coins 6500
+	coins 4600
+	coins 2500
 ENDC
 	db "@"
 
 PrizeMenuTMsEntries:
-	db TM_23
-	db TM_15
 	db TM_50
+	db TM_15
+	db TM_23
 	db "@"
 
 PrizeMenuTMsCost:
-	coins 3300
-	coins 5500
 	coins 7700
+	coins 5500
+	coins 3300
 	db "@"
