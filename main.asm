@@ -2161,3 +2161,8 @@ INCLUDE "engine/evolution.asm"
 INCLUDE "engine/overworld/elevator.asm"
 
 INCLUDE "engine/items/tm_prices.asm"
+
+SECTION "New Development", ROMX, BANK[$2]
+
+INCLUDE "new/rematch.asm"
+

@@ -604,7 +604,6 @@ INCLUDE "audio/engine_3.asm"
 SECTION "Music 1", ROMX, BANK[AUDIO_1]
 
 INCLUDE "audio/music/pkmnhealed.asm"
-INCLUDE "new/rematch.asm" ; messy, I know, but there was room here
 INCLUDE "audio/music/cities1.asm"
 INCLUDE "audio/music/meetrival.asm"
 INCLUDE "audio/music/nomusic1.asm"
