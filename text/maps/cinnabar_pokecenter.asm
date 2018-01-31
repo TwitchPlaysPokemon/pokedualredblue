@@ -4,7 +4,7 @@ _CinnabarPokecenterText2::
 
 	;para "When a #MON is"
 	;line "evolving, you can"
-	text "Stop it and leave."
+	text "stop it and leave"
 	;cont "it the way it is."
 	done
 

@@ -88,7 +88,7 @@ _CeladonGymBattleText2::
 IF DEF(_RED)
 	para "You are not"
 ELSE
-	para "Only grass types"
+	para "Only grass types're"
 ENDC
 	line "allowed in here!"
 	done

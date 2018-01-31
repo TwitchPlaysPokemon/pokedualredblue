@@ -1,34 +1,34 @@
 StartGymLeaderRematch::
     ld hl, RematchStartTextPointers
-	call LoadRematchText
-	call PrintText
+    call LoadRematchText
+    call PrintText
     xor a
     ld [wGymLeaderRematch], a ;disable further rematches
-	ld hl, wd72d
-	set 6, [hl]
-	set 7, [hl]
+    ld hl, wd72d
+    set 6, [hl]
+    set 7, [hl]
     ld hl, RematchLoseTextPointers
-	call LoadRematchText
-	ld d, h
-    ld e, l
-	ld hl, RematchWinTextPointers
     call LoadRematchText
-	call SaveEndBattleTextPointers
+    ld d, h
+    ld e, l
+    ld hl, RematchWinTextPointers
+    call LoadRematchText
+    call SaveEndBattleTextPointers
     ret
 
 ShowHideGymLeaderGiovanni::
-	CheckRematch $8
+    CheckRematch $8
     jr nz, .no_rematch
     ld a, HS_VIRIDIAN_GYM_GIOVANNI
-	ld [wMissableObjectIndex], a
-	predef ShowObject
+    ld [wMissableObjectIndex], a
+    predef ShowObject
     jr .done
 .no_rematch
-	CheckEvent EVENT_GOT_TM27
-	jr z, .done
+    CheckEvent EVENT_GOT_TM27
+    jr z, .done
     ld a, HS_VIRIDIAN_GYM_GIOVANNI
-	ld [wMissableObjectIndex], a
-	predef HideObject
+    ld [wMissableObjectIndex], a
+    predef HideObject
 .done
     ret
 
@@ -36,75 +36,75 @@ ShowHideGymLeaderGiovanni::
 ; pointed to by the pointer table in hl
 ; and leaves it in hl
 LoadRematchText:
-	ld a, [wGymLeaderNo]
-	sla a ; no need for carry check, GymLeaderNo shouldn't be over 8
-	add l
+    ld a, [wGymLeaderNo]
+    sla a ; no need for carry check, GymLeaderNo shouldn't be over 8
+    add l
     ld l, a
     jr nc, .noCarry
     inc h
 .noCarry
     ld a, [hli]
-	ld h, [hl]
-	ld l, a
-	ret
+    ld h, [hl]
+    ld l, a
+    ret
 
 RematchStartTextPointers:
-	dw GenericRematchStartText
-	dw BrockRematchStartText
-	dw MistyRematchStartText
-	dw SurgeRematchStartText
-	dw ErikaRematchStartText
-	dw KogaRematchStartText
-	dw SabrinaRematchStartText
-	dw BlaineRematchStartText
-	dw GiovanniRematchStartText
+    dw GenericRematchStartText
+    dw BrockRematchStartText
+    dw MistyRematchStartText
+    dw SurgeRematchStartText
+    dw ErikaRematchStartText
+    dw KogaRematchStartText
+    dw SabrinaRematchStartText
+    dw BlaineRematchStartText
+    dw GiovanniRematchStartText
 
 RematchWinTextPointers:
-	dw GenericRematchYouWinText
-	dw BrockRematchYouWinText
-	dw MistyRematchYouWinText
-	dw SurgeRematchYouWinText
-	dw ErikaRematchYouWinText
-	dw KogaRematchYouWinText
-	dw SabrinaRematchYouWinText
-	dw BlaineRematchYouWinText
-	dw GiovanniRematchYouWinText
+    dw GenericRematchYouWinText
+    dw BrockRematchYouWinText
+    dw MistyRematchYouWinText
+    dw SurgeRematchYouWinText
+    dw ErikaRematchYouWinText
+    dw KogaRematchYouWinText
+    dw SabrinaRematchYouWinText
+    dw BlaineRematchYouWinText
+    dw GiovanniRematchYouWinText
 
 RematchLoseTextPointers:
-	dw GenericRematchYouLoseText
-	dw BrockRematchYouLoseText
-	dw MistyRematchYouLoseText
-	dw SurgeRematchYouLoseText
-	dw ErikaRematchYouLoseText
-	dw KogaRematchYouLoseText
-	dw SabrinaRematchYouLoseText
-	dw BlaineRematchYouLoseText
-	dw GiovanniRematchYouLoseText
+    dw GenericRematchYouLoseText
+    dw BrockRematchYouLoseText
+    dw MistyRematchYouLoseText
+    dw SurgeRematchYouLoseText
+    dw ErikaRematchYouLoseText
+    dw KogaRematchYouLoseText
+    dw SabrinaRematchYouLoseText
+    dw BlaineRematchYouLoseText
+    dw GiovanniRematchYouLoseText
 
 GenericRematchStartText:
-	text "Oh, do you want"
-	line "a rematch?"
+    text "Oh, do you want"
+    line "a rematch?"
 
-	para "Very well, but I"
-	line "won't go easy!"
-	done
+    para "Very well, but I"
+    line "won't go easy!"
+    done
 
 GenericRematchYouWinText:
-	text "Wow!"
+    text "Wow!"
 
     para "Another great"
-	line "performance!"
-	prompt
+    line "performance!"
+    prompt
 
 GenericRematchYouLoseText:
-	text "Ouch!"
+    text "Ouch!"
 
     para "That was"
-	line "unfortunate."
+    line "unfortunate."
 
     para "You'll have to try"
     line "harder next time."
-	prompt
+    prompt
 
 BrockRematchStartText:
     text "You're back!"
@@ -116,23 +116,23 @@ BrockRematchStartText:
     cont "have progressed."
 
     para "Show me your best!"
-	done
+    done
     
 BrockRematchYouWinText:
     text "Even"
     line "after all this"
     cont "time, I still"
-	cont "took you for"
+    cont "took you for"
     cont "granted!"
-	prompt
+    prompt
 
 BrockRematchYouLoseText:
     text "You"
     line "didn't stand a"
-	cont "chance against"
+    cont "chance against"
     cont "my rock hard"
     cont "defense!"
-	prompt
+    prompt
     
 
 MistyRematchStartText:
@@ -142,26 +142,27 @@ MistyRematchStartText:
     
     para "Has your #MON"
     line "policy improved?"
-	done
+    done
     
 MistyRematchYouWinText:
     text "You"
-	line "are still too"
+    line "are still too"
     cont "much for me!"
     
     para "You're a real"
     line "pro trainer!"
-	prompt
+    prompt
     
 MistyRematchYouLoseText:
     text "I"
-	line "knew first time"
-    cont "was a fluke!"
+    line "knew the first"
+    cont "time was a"
+    cont "fluke!"
     
     para "You can't handle"
     line "my all-out"
     cont "offensive!"
-	prompt
+    prompt
     
 SurgeRematchStartText:
     text "Hey, the kid is"
@@ -170,40 +171,40 @@ SurgeRematchStartText:
     para "Let's see if your"
     line "combat skills"
     cont "have improved!"
-	done
+    done
     
     
 SurgeRematchYouWinText:
     text "Woah!"
-	line "You're still the"
+    line "You're still the"
     cont "real deal, kid!"
-	prompt
+    prompt
     
 SurgeRematchYouLoseText:
     text "Hah!"
-	line "And I thought you"
+    line "And I thought you"
     cont "were special!"
-	prompt
+    prompt
 
 ErikaRematchStartText:
     text "Oh, hello..."
     
     para "Do I know you?"
-	done
+    done
     
 ErikaRematchYouWinText:  
     text "I"
-	line "think I may"
+    line "think I may"
     cont "remember you..."
     
     para "Lovely weather,"
     line "isn't it?"
-	prompt
+    prompt
     
 ErikaRematchYouLoseText:
     text "No,"
     line "perhaps not..."
-	prompt
+    prompt
     
 KogaRematchStartText:
     text "Fwahahaha!"
@@ -211,24 +212,24 @@ KogaRematchStartText:
     para "You think you"
     line "can best a ninja"
     cont "master once again?"
-	done
+    done
     
 KogaRematchYouWinText:
     text "Once"
-	line "again, you have"
+    line "again, you have"
     cont "proven your"
     cont "worth."
-	prompt
+    prompt
     
 KogaRematchYouLoseText:   
-	text "Tch-"
+    text "Tch-"
 
     para "Fwahahaha!"
     
     para "We train to"
     line "confuse our"
     cont "enemies!"
-	prompt
+    prompt
     
 SabrinaRematchStartText:
     text "I foresaw your"
@@ -237,19 +238,19 @@ SabrinaRematchStartText:
     para "I already told"
     line "you, I dislike"
     cont "fighting..."
-	done
+    done
     
 SabrinaRematchYouWinText:
     text "Just"
-	line "as I foresaw!"
-	prompt
+    line "as I foresaw!"
+    prompt
     
 SabrinaRematchYouLoseText:
     text "It"
     line "seems you didn't"
     cont "foresee this"
-	cont "outcome!"
-	prompt
+    cont "outcome!"
+    prompt
 
 BlaineRematchStartText:
     text "Hah!"
@@ -260,19 +261,19 @@ BlaineRematchStartText:
     
     para "Do you still have"
     line "BURN HEAL?"
-	done
+    done
     
 BlaineRematchYouWinText:
     text "Burnt"
-	line "out again!"
-	prompt
+    line "out again!"
+    prompt
     
 BlaineRematchYouLoseText:
     text "Hah!"
     
     para "That's a real"
     line "burn!"
-	prompt
+    prompt
 
 GiovanniRematchStartText:
     text "Ah, <PLAYER>!"
@@ -281,14 +282,14 @@ GiovanniRematchStartText:
     
     para "This time I will"
     line "destroy you!"
-	done
+    done
     
 GiovanniRematchYouWinText:
     text "NO!"
     
     para "I just don't"
     line "understand!"
-	prompt
+    prompt
     
 GiovanniRematchYouLoseText:
     text "Hah!"
@@ -297,4 +298,4 @@ GiovanniRematchYouLoseText:
     line "consider a"
     cont "revival of TEAM"
     cont "ROCKET!"
-	prompt
+    prompt
