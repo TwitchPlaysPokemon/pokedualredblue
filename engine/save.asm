@@ -404,8 +404,9 @@ IncrementPCBox::
 	xor a
 .boxOk
 	ld [wCurrentMenuItem], a
-	jr ChangeBox.performChange ; change jr to call to restore the (broken) BoxChangedTo message
+	call ChangeBox.performChange
 	ld a, [wCurrentBoxNum]
+	and $7f
 	inc a
 	ld [wcd6d], a
 	ld hl, BoxChangedToText
