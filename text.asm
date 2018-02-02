@@ -2022,12 +2022,22 @@ _OlderFileWillBeErasedText::
 	cont "save. Okay?"
 	done
 
-_WhenYouChangeBoxText::
-	text "When you change a"
-	line "#MON BOX, data"
-	cont "will be saved."
+_WantToChangeBoxText::
+	text "The current"
+	line "<pkmn> BOX is full."
 
-	para "Is that okay?"
+	para "Would you like to"
+	line "switch to the"
+	cont "next <pkmn> BOX?"
+	done
+
+_BoxChangedToText::
+	text "<PLAYER> saved"
+	line "the game and"
+	cont "switched to"
+	cont "BOX "
+	TX_NUM wcd6d,1,1
+	text "!"
 	done
 
 _ChooseABoxText::

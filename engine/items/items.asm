@@ -105,7 +105,7 @@ ItemUseBall:
 ; Balls can't be used out of battle.
 	ld a,[wIsInBattle]
 	and a
-	jp z,ItemUseNotTime
+	jp z, ItemUseNotTime
 
 ; Balls can't catch trainers' Pokémon.
 	dec a
