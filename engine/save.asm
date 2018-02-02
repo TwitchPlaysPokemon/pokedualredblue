@@ -399,7 +399,7 @@ IncrementPCBox::
 	ld a, [wCurrentBoxNum]
 	and $7f
 	inc a
-	cp a, 12
+	cp NUM_BOXES
 	jr c, .boxOk
 	xor a
 .boxOk
