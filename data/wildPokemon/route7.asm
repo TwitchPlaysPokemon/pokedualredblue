@@ -6,7 +6,7 @@ Route7Mons:
 		db 17,MANKEY
 		db 22,ODDISH
 		db 22,PIDGEY
-		db 18,MANKEY
+		db 18,EEVEE
 		db 18,GROWLITHE
 		db 20,GROWLITHE
 		db 19,MANKEY
@@ -17,7 +17,7 @@ Route7Mons:
 		db 19,BELLSPROUT
 		db 17,MEOWTH
 		db 22,BELLSPROUT
-		db 22,PIDGEY
+		db 22,EEVEE
 		db 18,MEOWTH
 		db 18,VULPIX
 		db 20,VULPIX

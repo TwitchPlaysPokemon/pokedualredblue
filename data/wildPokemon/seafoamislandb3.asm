@@ -4,7 +4,7 @@ IslandMonsB3:
 		db 31,SLOWPOKE
 		db 31,SEEL
 		db 33,SLOWPOKE
-		db 33,SEEL
+		db 33,OMANYTE
 		db 29,HORSEA
 		db 31,SHELLDER
 		db 31,HORSEA
@@ -16,7 +16,7 @@ IslandMonsB3:
 		db 31,PSYDUCK
 		db 31,SEEL
 		db 33,PSYDUCK
-		db 33,SEEL
+		db 33,KABUTO
 		db 29,KRABBY
 		db 31,STARYU
 		db 31,KRABBY
@@ -24,4 +24,28 @@ IslandMonsB3:
 		db 39,KINGLER
 		db 37,DEWGONG
 	ENDC
-	db $00
+	db $05
+		IF DEF(_RED)
+		db 30,SEEL
+		db 28,SEEL
+		db 30,TENTACRUEL
+		db 28,HORSEA
+		db 30,HORSEA
+		db 27,HORSEA
+		db 30,OMANYTE
+		db 35,GOLDUCK
+		db 33,GOLDUCK
+		db 34,GOLDUCK
+	ENDC
+	IF DEF(_BLUE)
+		db 30,SEEL
+		db 28,SEEL
+		db 30,TENTACRUEL
+		db 28,KRABBY
+		db 30,KRABBY
+		db 27,KRABBY
+		db 30,KABUTO
+		db 35,SLOWBRO
+		db 33,SLOWBRO
+		db 34,SLOWBRO
+	ENDC

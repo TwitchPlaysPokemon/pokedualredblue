@@ -7,8 +7,8 @@ ForestMons:
 		db 5,WEEDLE
 		db 4,KAKUNA
 		db 6,KAKUNA
-		db 4,METAPOD
-		db 3,CATERPIE
+		db 4,PIKACHU
+		db 3,PIKACHU
 	ENDC
 	IF DEF(_BLUE)
 		db 4,CATERPIE
@@ -17,8 +17,8 @@ ForestMons:
 		db 5,CATERPIE
 		db 4,METAPOD
 		db 6,METAPOD
-		db 4,KAKUNA
-		db 3,WEEDLE
+		db 4,PIKACHU
+		db 3,PIKACHU
 	ENDC
 	db 3,PIKACHU
 	db 5,PIKACHU

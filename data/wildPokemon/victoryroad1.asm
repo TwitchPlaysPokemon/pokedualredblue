@@ -2,8 +2,8 @@ PlateauMons1:
 	db $0F
 	db 24,MACHOP
 	db 26,GEODUDE
-	db 22,ZUBAT
-	db 36,ONIX
+	db 35,GOLBAT
+	db 36,RHYHORN
 	db 39,ONIX
 	db 42,ONIX
 	db 41,GRAVELER
