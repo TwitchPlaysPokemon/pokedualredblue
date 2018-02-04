@@ -5,6 +5,7 @@ PowerPlantScript:
 	ld a, [wPowerPlantCurScript]
 	call ExecuteCurMapScriptInTable
 	ld [wPowerPlantCurScript], a
+	ResetUncaughtPokemon ZAPDOS
 	ret
 
 .ScriptPointers
@@ -102,7 +103,7 @@ Voltorb7TrainerHeader:
 
 ZapdosTrainerHeader:
 	dbEventFlagBit EVENT_BEAT_ZAPDOS, 1
-	db ($1 << 4) ; view range
+	db (0 << 4) ; view range
 	dwEventFlagAddress EVENT_BEAT_ZAPDOS, 1
 	dw ZapdosBattleText ; TextBeforeBattle
 	dw ZapdosBattleText ; TextAfterBattle

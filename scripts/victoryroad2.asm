@@ -13,6 +13,7 @@ VictoryRoad2Script:
 	ld a, [wVictoryRoad2CurScript]
 	call ExecuteCurMapScriptInTable
 	ld [wVictoryRoad2CurScript], a
+	ResetUncaughtPokemon MOLTRES
 	ret
 
 VictoryRoad2Script_517c4:
@@ -130,7 +131,7 @@ VictoryRoad2TrainerHeader4:
 
 MoltresTrainerHeader:
 	dbEventFlagBit EVENT_BEAT_MOLTRES
-	db ($1 << 4) ; trainer's view range
+	db (0 << 4) ; trainer's view range
 	dwEventFlagAddress EVENT_BEAT_MOLTRES
 	dw MoltresBattleText ; TextBeforeBattle
 	dw MoltresBattleText ; TextAfterBattle

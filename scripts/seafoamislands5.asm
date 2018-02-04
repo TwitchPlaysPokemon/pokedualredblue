@@ -2,7 +2,9 @@ SeafoamIslands5Script:
 	call EnableAutoTextBoxDrawing
 	ld a, [wSeafoamIslands5CurScript]
 	ld hl, SeafoamIslands5ScriptPointers
-	jp CallFunctionInTable
+	call CallFunctionInTable
+	ResetUncaughtPokemon ARTICUNO
+	ret
 
 SeafoamIslands5Script_467a5:
 	xor a
@@ -139,7 +141,7 @@ SeafoamIslands5TextPointers:
 
 ArticunoTrainerHeader:
 	dbEventFlagBit EVENT_BEAT_ARTICUNO
-	db ($1 << 4) ; trainer's view range
+	db (0 << 4) ; trainer's view range
 	dwEventFlagAddress EVENT_BEAT_ARTICUNO
 	dw ArticunoBattleText ; TextBeforeBattle
 	dw ArticunoBattleText ; TextAfterBattle

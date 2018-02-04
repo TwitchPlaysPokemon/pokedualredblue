@@ -5,6 +5,7 @@ UnknownDungeon3Script:
 	ld a, [wUnknownDungeon3CurScript]
 	call ExecuteCurMapScriptInTable
 	ld [wUnknownDungeon3CurScript], a
+	ResetUncaughtPokemon MEWTWO
 	ret
 
 .ScriptPointers
@@ -19,7 +20,7 @@ UnknownDungeon3TextPointers:
 
 MewtwoTrainerHeader:
 	dbEventFlagBit EVENT_BEAT_MEWTWO
-	db ($1 << 4) ; trainer's view range
+	db (0 << 4) ; trainer's view range
 	dwEventFlagAddress EVENT_BEAT_MEWTWO
 	dw MewtwoBattleText ; TextBeforeBattle
 	dw MewtwoBattleText ; TextAfterBattle
