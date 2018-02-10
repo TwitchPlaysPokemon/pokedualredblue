@@ -36,7 +36,7 @@ DisplayDiploma:
 	coord hl, 10, 4
 	ld de, wPlayerName
 	call PlaceString
-	callba DrawPlayerCharacter
+	callba DrawDiplomaPic
 
 ; Move the player 33 pixels right and set the priority bit so he appears
 ; behind the background layer.
@@ -91,7 +91,7 @@ DiplomaTextPointersAndCoords:
 	dw DiplomaCongrats
 	dwCoord 2, 6
 	dw DiplomaGameFreak
-	dwCoord 9, 16
+	dwCoord 8, 16
 
 DiplomaText:
 	db $70,"Diploma",$70,"@"
@@ -110,4 +110,4 @@ DiplomaCongrats:
 	next "#DEX.@"
 
 DiplomaGameFreak:
-	db "GAME FREAK@"
+	db "TPP 2018@"

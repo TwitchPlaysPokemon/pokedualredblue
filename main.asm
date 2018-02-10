@@ -2166,3 +2166,12 @@ SECTION "New Development", ROMX, BANK[$2]
 
 INCLUDE "new/rematch.asm"
 
+DiplomaPic:
+	IF DEF(_RED)
+		INCBIN "gfx/player_title.2bpp"
+	ENDC
+	IF DEF(_BLUE)
+		INCBIN "gfx/player_title_girl.2bpp"
+	ENDC
+DiplomaPicEnd:
+

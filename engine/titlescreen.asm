@@ -90,7 +90,7 @@ DisplayTitleScreen:
 	dec b
 	jr nz, .pokemonLogoLastTileRowLoop
 
-	call DrawPlayerCharacter
+	call DrawTitlePlayer
 
 ; put a pokeball in the player's hand
 	ld hl, wOAMBuffer + $28
@@ -307,11 +307,19 @@ ScrollTitleScreenGameVersion:
 	jr z, .wait2
 	ret
 
-DrawPlayerCharacter:
+DrawDiplomaPic:
+	ld hl, DiplomaPic
+	ld de, vSprites
+	ld bc, DiplomaPicEnd - DiplomaPic
+	ld a, BANK(DiplomaPic)
+	jr DrawPlayerCharacter
+
+DrawTitlePlayer:
 	ld hl, PlayerCharacterTitleGraphics
 	ld de, vSprites
 	ld bc, PlayerCharacterTitleGraphicsEnd - PlayerCharacterTitleGraphics
 	ld a, BANK(PlayerCharacterTitleGraphics)
+DrawPlayerCharacter:
 	call FarCopyData2
 	call ClearSprites
 	xor a
