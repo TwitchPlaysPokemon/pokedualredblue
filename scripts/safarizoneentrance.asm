@@ -182,9 +182,9 @@ SafariZoneEntranceTextPointers:
 	call PrintText
 	ld a,30
 	ld [wNumSafariBalls],a
-	ld a,502 / $100
+	ld a, 1514 / $100
 	ld [wSafariSteps],a
-	ld a, 502 % $100
+	ld a, 1514 % $100
 	ld [wSafariSteps + 1],a
 	ld a,D_UP
 	ld c,3
