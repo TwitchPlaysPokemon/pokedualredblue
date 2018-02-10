@@ -7,7 +7,8 @@ Route15GateUpstairsTextPointers:
 
 Route15GateUpstairsText1:
 	TX_ASM
-	CheckEvent EVENT_GOT_EXP_ALL
+	ld b, EXP_ALL
+	call IsItemInBag
 	jr nz, .asm_49683
 	ld a, 50 ; pokemon needed
 	ld [hOaksAideRequirement], a
