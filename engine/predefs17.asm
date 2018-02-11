@@ -1,9 +1,9 @@
-; this function temporarily makes the starters (and Ivysaur) seen
+; this function temporarily sets wShowPokedexAnyway
 ; so that the full Pokedex information gets displayed in Oak's lab
 StarterDex:
-	ld a, %01001011 ; set starter flags
-	ld [wPokedexOwned], a
+	and a
+	ld [wShowPokedexAnyway], a
 	predef ShowPokedexData
-	xor a ; unset starter flags
-	ld [wPokedexOwned], a
+	xor a
+	ld [wShowPokedexAnyway], a
 	ret

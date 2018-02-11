@@ -2119,7 +2119,7 @@ wMoveNum:: ; d0e0
 wMovesString:: ; d0e1
 	ds 56
 
-wUnusedD119:: ; d119
+wShowPokedexAnyway:: ; d119
 	ds 1
 
 wWalkBikeSurfStateCopy:: ; d11a
