@@ -512,10 +512,10 @@ ShowPokedexDataInternal:
 
 	ld a,c
 	and a
-	jp nz, .printDescription
+	jr nz, .printDescription
 	ld a, [wShowPokedexAnyway]
 	and a
-	jp z,.waitForButtonPress ; if the pokemon has not been owned, don't print the height, weight, or description
+	jr z,.waitForButtonPress ; if the pokemon has not been owned, don't print the height, weight, or description
 .printDescription
 	inc de ; de = address of feet (height)
 	ld a,[de] ; reads feet, but a is overwritten without being used
