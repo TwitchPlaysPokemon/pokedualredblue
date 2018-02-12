@@ -92,7 +92,12 @@ FlyWarpDataPtr:
 ; Macro Format:
 ;   FLYWARP_DATA [Map Width][Y-pos][X-pos]
 PalletTownFlyWarp:
-	FLYWARP_DATA PALLET_TOWN_WIDTH,      6,  5
+	IF DEF(_RED)
+		FLYWARP_DATA PALLET_TOWN_WIDTH,      6,  13
+	ENDC
+	IF DEF(_BLUE)
+		FLYWARP_DATA PALLET_TOWN_WIDTH,      6,  5
+	ENDC
 ViridianCityFlyWarp:
 	FLYWARP_DATA VIRIDIAN_CITY_WIDTH,   26, 23
 PewterCityFlyWarp:
