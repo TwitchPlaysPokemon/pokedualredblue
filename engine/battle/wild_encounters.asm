@@ -74,6 +74,8 @@ TryDoWildEncounter:
 	ld b, 0
 	add hl, bc
 	ld a, [hli]
+	and a
+	jr z, .CantEncounter2
 	ld [wCurEnemyLVL], a
 	ld a, [hl]
 	ld [wcf91], a
