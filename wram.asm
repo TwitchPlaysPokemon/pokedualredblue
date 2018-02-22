@@ -1891,10 +1891,7 @@ wNewSlotMachineBallTile:: ; d08a
 wCoordAdjustmentAmount:: ; d08a
 ; how much to add to the X/Y coord
 
-wGymLeaderRematch:: ; d08a
-; if set to 1 - 8, a rematch is available for that gym leader.
-; 0 if no rematch is available. 
-; use gameshark: 01XX8AD0 where XX is 01-08 to test.
+wShowPokedexAnyway:: ; d08a
 	ds 1
 
 wSpiralBallsBaseX:: ; d08b
@@ -2119,7 +2116,10 @@ wMoveNum:: ; d0e0
 wMovesString:: ; d0e1
 	ds 56
 
-wShowPokedexAnyway:: ; d119
+wGymLeaderRematch:: ; d119
+; if set to 1 - 8, a rematch is available for that gym leader.
+; 0 if no rematch is available. 
+; use gameshark: 01XX19D1 where XX is 01-08 to test.
 	ds 1
 
 wWalkBikeSurfStateCopy:: ; d11a
