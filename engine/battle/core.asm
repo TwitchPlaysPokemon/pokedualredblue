@@ -2193,8 +2193,8 @@ DisplayBattleMenu:
 	ld [hli], a ; wMaxMenuItem
 	ld [hl], D_RIGHT | A_BUTTON ; wMenuWatchedKeys
 	call HandleMenuInput
-	bit 4, a ; check if right was pressed
-	jr nz, .rightColumn
+	bit BIT_A_BUTTON, a ; check if A was pressed
+	jr z, .rightColumn
 	jr .AButtonPressed ; the A button was pressed
 .rightColumn ; put cursor in right column of menu
 	ld a, [wBattleType]
