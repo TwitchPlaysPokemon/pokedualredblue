@@ -1594,7 +1594,7 @@ TryRunningFromBattle:
 	jp z, .canEscape ; jump if it's a safari battle
 	ld a, [wLinkState]
 	cp LINK_STATE_BATTLING
-	jp z, .canEscape
+	jp z, .trainerBattle
 	ld a, [wIsInBattle]
 	dec a
 	jr nz, .trainerBattle ; jump if it's a trainer battle
