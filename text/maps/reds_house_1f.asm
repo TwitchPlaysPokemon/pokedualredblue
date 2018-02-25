@@ -45,3 +45,23 @@ ENDC
 _TVWrongSideText::
 	text "Oops, wrong side."
 	done
+
+_ChiefIntroduce::
+	text "..."
+
+	para "MOM: This quiet"
+	line "boy says he used"
+	cont "to live here."
+
+	para "MOM: He's a "
+	line "trainer, just"
+	cont "like you!"
+	done
+
+_ChiefBattleOver::
+	text "..."
+	done
+
+_ChiefBattleEnd::
+	text "..."
+	prompt

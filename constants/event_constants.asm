@@ -2472,7 +2472,7 @@ const_value = 0
 	const EVENT_9A5                                  ; 9A5, (D87B, bit 5)
 	const EVENT_9A6                                  ; 9A6, (D87B, bit 6)
 	const EVENT_9A7                                  ; 9A7, (D87B, bit 7)
-	const EVENT_9A8                                  ; 9A8, (D87C, bit 0)
+	const EVENT_BEAT_CHIEF							 ; 9A8, (D87C, bit 0)
 	const EVENT_9A9                                  ; 9A9, (D87C, bit 1)
 	const EVENT_9AA                                  ; 9AA, (D87C, bit 2)
 	const EVENT_9AB                                  ; 9AB, (D87C, bit 3)

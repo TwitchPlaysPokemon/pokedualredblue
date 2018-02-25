@@ -80,7 +80,7 @@ TrainerPicAndMoneyPointers:
 	money 9900
 
 	dw ChiefPic
-	money 3000
+	money 9900
 
 	dw ScientistPic
 	money 5000

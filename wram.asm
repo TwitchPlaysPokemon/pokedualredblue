@@ -2786,6 +2786,7 @@ wRockTunnel2CurScript:: ; d620
 	ds 1
 wRockTunnel1CurScript:: ; d621
 	ds 1
+wRedsHouse1FCurScript:: ; d622
 	ds 1
 wRoute11CurScript:: ; d623
 	ds 1

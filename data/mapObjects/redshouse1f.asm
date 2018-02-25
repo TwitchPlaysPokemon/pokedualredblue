@@ -9,8 +9,14 @@ RedsHouse1FObject:
 	db $1 ; signs
 	db $1, $3, $2 ; TV
 
-	db $1 ; objects
+	db $2 ; objects
 	object SPRITE_MOM, $5, $4, STAY, LEFT, $1 ; Mom
+IF DEF(_RED)
+	object SPRITE_RED, $2, $4, STAY, RIGHT, $3, OPP_CHIEF, $1 ; RED
+ENDC
+IF DEF(_BLUE)
+	object SPRITE_BLUE, $2, $4, STAY, RIGHT, $3, OPP_CHIEF, $2 ; AIIIAAB
+ENDC
 
 	; warp-to
 	EVENT_DISP REDS_HOUSE_1F_WIDTH, $7, $2

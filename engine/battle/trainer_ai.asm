@@ -302,7 +302,7 @@ TrainerClassMoveChoiceModifications:
 	db 1,0    ; BLACKBELT
 	db 1,0    ; SONY1
 	db 1,3,0  ; PROF_OAK
-	db 1,2,0  ; CHIEF
+	db 1,3,0  ; CHIEF
 	db 1,2,0  ; SCIENTIST
 	db 1,3,0  ; GIOVANNI
 	db 1,0    ; ROCKET
@@ -398,7 +398,7 @@ TrainerAIPointers:
 	dbw 2,BlackbeltAI ; blackbelt
 	dbw 3,GenericAI
 	dbw 3,GenericAI
-	dbw 1,GenericAI ; chief
+	dbw 1,Sony3AI ; chief
 	dbw 3,GenericAI
 	dbw 1,GiovanniAI ; giovanni
 	dbw 3,GenericAI

@@ -1312,7 +1312,6 @@ Rival1Pic::
 		INCBIN "pic/trainer/green.pic"
 	ENDC
 ProfOakPic::       INCBIN "pic/trainer/prof.oak.pic"
-ChiefPic::
 ScientistPic::     INCBIN "pic/trainer/scientist.pic"
 GiovanniPic::      INCBIN "pic/trainer/giovanni.pic"
 RocketPic::        INCBIN "pic/trainer/rocket.pic"
@@ -2175,3 +2174,4 @@ DiplomaPic:
 	ENDC
 DiplomaPicEnd:
 
+ChiefPic::		   INCBIN "pic/trainer/red.pic"
